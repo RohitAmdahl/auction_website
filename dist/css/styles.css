@@ -10769,5 +10769,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Poppins", sans-serif, Arial;
+  background: #f9f7f7;
+}
 
 /*# sourceMappingURL=styles.css.map */
