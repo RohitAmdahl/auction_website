@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/RohitAmdahl/semster-project-2-/issues"
   },
-  "homepage": "https://github.com/RohitAmdahl/semster-project-2-#readme"
+  "homepage": "https://github.com/RohitAmdahl/semster-project-2-#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
 }
