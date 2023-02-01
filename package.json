@@ -1,0 +1,24 @@
+{
+  "name": "semster-project-2-",
+  "version": "0.0.1",
+  "description": "Auction website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohitAmdahl/semster-project-2-.git"
+  },
+  "keywords": [
+    "javascript_Sass_bootstrap_Api_online",
+    "biding"
+  ],
+  "author": "Rohit kumar <rohit_designer@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohitAmdahl/semster-project-2-/issues"
+  },
+  "homepage": "https://github.com/RohitAmdahl/semster-project-2-#readme"
+}
