@@ -1,0 +1,144 @@
+// Typography
+//
+
+// used in my pages
+$gray-400: #ced4da;
+$box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+
+// used in nav
+$background_btn: #9cdad7;
+$text-color: #373737;
+$blue-2: #ace7ef;
+$background_btn_hover: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+
+// body fonts
+$font-family: "Poppins", sans-serif, Arial;
+$font-family-base: "Poppins", sans-serif, Arial;
+$font-family-code: "Poppins", sans-serif, Arial;
+// stylelint-enable value-keyword-case
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root: null;
+$font-size-base: 1.3rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$h1-font-size: $font-size-base * 2.6;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+// scss-docs-end font-variables
+
+// $body-bg: $white;
+// $body-color: $gray-900;
+// $body-text-align: null;
+// Color system
+
+// scss-docs-start gray-color-variables
+$white: rgb(253, 253, 253);
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #fdfcfb; //--logo background
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #373737; //--text color
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+);
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+// $body: background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+$primary-color: #f9f7f7;
+$blue: #02a0b5;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #d63384;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #048e65;
+$teal: #20c997;
+$cyan: #0393b3;
+$text-color: #373737;
+$background_btn: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "black": $black,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);
+// scss-docs-end colors-map
+$spacer: 1.2rem;
+$spacers: (
+  0: 0,
+  1: $spacer 5px,
+  2: $spacer 10px,
+  3: $spacer 15px,
+  4: $spacer 18px,
+  5: $spacer 20px,
+);
+
+// scss-docs-start border-radius-variables
+$border-radius: 1.2rem;
+$border-radius-sm: 0rem;
+$border-radius-lg: 3rem;
+$border-radius-xl: 4rem;
+$border-radius-2xl: 6rem;
+$border-radius-pill: 50rem;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start input-btn-variables
+$input-btn-padding-y: 0.8rem;
+$input-btn-padding-x: 0.8rem;
