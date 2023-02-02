@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="description"
+      content="Online auction website for sell and bid Unique items bid is from 1 credit and 1000 free credit"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Auction | Home page</title>
+    <link rel="stylesheet" href="dist/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                class="logo img-fluid. w-100"
+                src="pictures/logo.png"
+                alt="logo auction w-100"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="container">
+                <ul
+                  class="navbar-nav me-auto mb-1 mb-lg-0 justify-content-center"
+                >
+                  <li class="nav-item lead">
+                    <a
+                      class="nav-link active fw-bold ms-3"
+                      aria-current="page"
+                      href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item lead">
+                    <a class="nav-link ms-3" href="">Explore</a>
+                  </li>
+                  <li class="nav-item lead">
+                    <a class="nav-link ms-3" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <a
+                href="login.html"
+                class="ms-5 btn cta-login fw-bold w-100 btn-lg"
+                role="button"
+                aria-disabled="true"
+                >Log In</a
+              >
+              <a
+                href="#"
+                class="ms-5 btn cta-signup fw-bold w-100 btn-lg"
+                role="button"
+                aria-disabled="true"
+              >
+                Sign UP
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1 class="container">
+          <span
+            class="hero-heading fw-bold d-flex justify-content-center p-3 mt-2 shadow-lg p-3 rounded"
+            >Uncover Hidden Treasures with Log In!</span
+          >
+        </h1>
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-3">
+              <ul class="list-group mt-5">
+                <li class="fw-bold list-group p-2 mb-1 lead">Unique items</li>
+                <li class="fw-bold list-group p-2 mb-1 lead credit">
+                  Bid with 1 credit
+                </li>
+                <li class="fw-bold list-group p-2 mb-1 lead">
+                  Curated by experts full security
+                </li>
+                <li class="fw-bold list-group p-2 mb-1 display-6">
+                  Get first free 1000 credit for BID
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5">
+              <form class="form-signin">
+                <div class="mb-3 form-label-group">
+                  <label for="email1" class="pb-3 fw-bold">Email</label>
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control pb-3"
+                    id="Emailinput"
+                    placeholder="name@noroff.no or first.last@stud.noroff.no"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-label-group">
+                  <label for="Password" class="pb-3 fw-bold">Password</label>
+                  <input
+                    name="password"
+                    type="password"
+                    id="Passwordinput"
+                    class="form-control pb-3"
+                    placeholder="The password value must be at least 8 characters."
+                    minlength="8"
+                    required
+                  />
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    class="mt-2 mb-3 btn cta-login-cta fw-bold w-100 btn-lg"
+                  >
+                    Log In
+                    <span
+                      ><img
+                        src="/pictures/icons/click-me.png"
+                        alt="right arrow"
+                        class="click-me"
+                    /></span>
+                  </button>
+                </div>
+              </form>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <span class="m-2 d-flex credit"
+                  >Don't have an account ? create an Account
+                </span>
+                <a
+                  href="#"
+                  class="mt-4 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
+                  role="button"
+                  aria-disabled="true"
+                >
+                  Sign UP
+                  <span
+                    ><img
+                      class="click-me"
+                      src="/pictures/icons/click-me.png"
+                      alt="right arrow"
+                  /></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="footer fw-bold p-2 d-flex flex-column justify-content-center text-center mt-3"
+      >
+        <span class="m-2"> &copy; Designed by:- Rohit Kumar</span>
+        <span> Semester project-2 </span>
+        <div class="m-2">
+          &copy; <img src="pictures/logo-footer.png" alt="owner logo w-100" />
+        </div>
+      </div>
+    </footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
