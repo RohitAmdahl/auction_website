@@ -10785,6 +10785,8 @@ body {
 }
 .cta-login:hover {
   background: #99e3e5;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .cta-signup {
@@ -10794,6 +10796,8 @@ body {
 }
 .cta-signup:hover {
   background-color: #fff7d6;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .hero-background-img {
@@ -10802,7 +10806,7 @@ body {
   background-position: center;
   background-size: cover;
   background-position-x: center;
-  height: 380px;
+  height: 325px;
 }
 
 .hero-heading {
@@ -10812,14 +10816,17 @@ body {
 .big-btn {
   max-width: 350px;
   background: #99e3e5;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.2s;
 }
 .big-btn:hover {
   background: #fcb500;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .auction-hero {
-  max-width: 550px;
+  max-width: 400px;
 }
 
 .credit {
