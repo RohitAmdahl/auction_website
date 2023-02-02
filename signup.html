@@ -60,19 +60,16 @@
                   </li>
                 </ul>
               </div>
-
               <a
                 href="login.html"
                 class="ms-5 btn cta-login fw-bold w-100 btn-lg"
                 role="button"
-                aria-disabled="true"
                 >Log In</a
               >
               <a
                 href="signup.html"
                 class="ms-5 btn cta-signup fw-bold w-100 btn-lg"
                 role="button"
-                aria-disabled="true"
               >
                 Sign UP
               </a>
@@ -86,7 +83,7 @@
         <h1 class="container">
           <span
             class="hero-heading fw-bold d-flex justify-content-center p-3 mt-2 shadow-lg p-3 rounded"
-            >Uncover Hidden Treasures Log In!</span
+            >Create Account for Bid!</span
           >
         </h1>
         <div class="container">
@@ -107,7 +104,16 @@
             </div>
 
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5">
-              <form class="form-signin">
+              <form class="form-signin" method="post">
+                <div class="form-group mb-3">
+                  <label for="name" class="form-label pb-3 fw-bold">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameinput"
+                    name="name"
+                  />
+                </div>
                 <div class="mb-3 form-label-group">
                   <label for="email1" class="pb-3 fw-bold">Email</label>
                   <input
@@ -138,20 +144,11 @@
                 <span class="m-2 d-flex credit"
                   >Don't have an account ? create an Account
                 </span>
-                <a
-                  href="signup.html"
-                  class="mt-4 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
-                  role="button"
-                  aria-disabled="true"
+                <button
+                  class="mt-2 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
                 >
                   Sign UP
-                  <span
-                    ><img
-                      class="click-me"
-                      src="/pictures/icons/click-me.png"
-                      alt="right arrow"
-                  /></span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
