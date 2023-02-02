@@ -10818,4 +10818,16 @@ body {
   background: #fcb500;
 }
 
+.auction-hero {
+  max-width: 550px;
+}
+
+.credit {
+  color: #0d6efd;
+}
+
+.footer {
+  background-color: #ced4da;
+}
+
 /*# sourceMappingURL=styles.css.map */
