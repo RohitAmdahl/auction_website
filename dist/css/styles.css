@@ -10800,6 +10800,28 @@ body {
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
+.cta-login-cta {
+  max-width: 180px;
+  outline: 2px solid #99e3e5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-login-cta:hover {
+  background: #99e3e5;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cta-signup-cta {
+  max-width: 180px;
+  outline: 2px solid #fcb500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-signup-cta:hover {
+  background-color: #fff7d6;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
 .hero-background-img {
   background-image: url(/pictures/hero-img.jpg);
   background-repeat: no-repeat;
@@ -10830,11 +10852,15 @@ body {
 }
 
 .credit {
-  color: #0d6efd;
+  color: #003e9b;
 }
 
 .footer {
   background-color: #ced4da;
+}
+
+.click-me {
+  max-width: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */
