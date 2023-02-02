@@ -21,7 +21,7 @@ $font-family-code: "Poppins", sans-serif, Arial;
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root: null;
-$font-size-base: 1.3rem; // Assumes the browser default, typically `16px`
+$font-size-base: 1.5rem; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * 0.875;
 $font-size-lg: $font-size-base * 1.25;
 
@@ -124,11 +124,11 @@ $spacers: (
   2: $spacer 10px,
   3: $spacer 15px,
   4: $spacer 18px,
-  5: $spacer 20px,
+  5: $spacer 25px,
 );
 
 // scss-docs-start border-radius-variables
-$border-radius: 1.2rem;
+$border-radius: 1.5rem;
 $border-radius-sm: 0rem;
 $border-radius-lg: 3rem;
 $border-radius-xl: 4rem;
