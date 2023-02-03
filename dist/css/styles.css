@@ -10863,4 +10863,24 @@ body {
   max-width: 32px;
 }
 
+.explore-img {
+  background-image: url(/pictures/explore.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: center;
+  height: 350px;
+}
+
+.explore-action {
+  max-width: 150px;
+  background-color: #fcb500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.explore-action:hover {
+  background-color: #fff7d6;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
 /*# sourceMappingURL=styles.css.map */
