@@ -10883,6 +10883,10 @@ body {
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
+.explore-cards {
+  width: 18rem;
+}
+
 .Specific-picture {
   max-width: 350px;
 }
