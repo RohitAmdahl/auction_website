@@ -119,6 +119,8 @@
                     class="form-control pb-3"
                     id="Emailinput"
                     placeholder="name@noroff.no or first.last@stud.noroff.no"
+                    pattern="[\w\-.]+@(stud.)?noroff.no$"
+                    title="user name contains lower case and uppercase letter number and (_) and @norroff.no and @stud.norroff.no is allowed"
                     required
                   />
                 </div>
@@ -145,6 +147,12 @@
                   class="mt-2 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
                 >
                   Sign UP
+                  <span
+                    ><img
+                      class="click-me"
+                      src="/pictures/icons/click-me.png"
+                      alt="right arrow"
+                  /></span>
                 </button>
               </div>
             </div>
