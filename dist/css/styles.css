@@ -10772,6 +10772,7 @@ textarea.form-control-lg {
 body {
   font-family: "Poppins", sans-serif, Arial;
   background: #f9f7f7;
+  color: #373737;
 }
 
 .logo {
@@ -10820,6 +10821,10 @@ body {
   background-color: #fff7d6;
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  max-width: 29px;
 }
 
 .hero-background-img {
@@ -10889,6 +10894,35 @@ body {
 
 .Specific-picture {
   max-width: 350px;
+}
+
+.cta-logout-cta {
+  max-width: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #ff7a00;
+  outline: 2px solid #fff7d6;
+}
+.cta-logout-cta:hover {
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  background: #ff7a00;
+}
+
+.profile-pic {
+  max-width: 150px;
+}
+
+.avatar-button {
+  max-width: 350px;
+  background: #99e3e5;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.2s;
+  outline: 2px solid #fcb500;
+}
+.avatar-button:hover {
+  background: #fcb500;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=styles.css.map */
