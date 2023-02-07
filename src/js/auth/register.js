@@ -5,16 +5,22 @@ const displayMsg = document.querySelector(".hero-heading");
 async function register(registerUrl, data) {
   try {
     const body = JSON.stringify(data);
-    const postData = {
+    const registerData = {
       method: "post",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
       body,
     };
-    const response = await fetch(registerUrl, postData);
+    const response = await fetch(registerUrl, registerData);
+    console.log(response);
+
+    if (!response.ok) {
+      const message = `An error has occurred: ${response.status}`;
+      console.log(message);
+      throw new Error(message);
+    }
     const results = await response.json();
-    console.log(results);
     console.log(results);
   } catch (error) {
     console.log(error);
