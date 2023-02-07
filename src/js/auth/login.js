@@ -1,5 +1,5 @@
 import * as storage from "../storage/localStorage.js";
-const loginUrl = "https://nf-api.onrender.com/api/v1/auction/auth/login";
+export const loginUrl = "https://nf-api.onrender.com/api/v1/auction/auth/login";
 const method = "post";
 
 export async function login(url, data) {
@@ -16,14 +16,18 @@ export async function login(url, data) {
     const results = await response.json();
 
     const accessToken = results.accessToken;
+    localStorage.setItem("Token", accessToken);
+    const user = results.name;
+    localStorage.setItem("userName", user);
+    const credit = results.credits;
+    localStorage.setItem("credits", credit);
+
     if (accessToken) {
-      window.location.replace("/index.html");
+      window.location.replace("/profile.html");
       console.log("I got a token, and should be logged in");
     } else {
       console.log("I did not get a token, so either a wrong email or password");
     }
-    localStorage.setItem("Token", accessToken);
-    saveItem("profile", results);
   } catch (error) {
     console.log(error);
   }
