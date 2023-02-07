@@ -101,23 +101,31 @@
             <div class="card mb-5 mt-5">
               <img
                 src="pictures/icons/profile.png"
-                class="profile-pic"
+                class="profile-pic profile_img"
                 alt="profile picture w-100"
               />
               <div class="card-body">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item p-2">Title :- Name of the item</li>
-                  <li class="list-group-item p-2">Total Token credit :-</li>
-                  <li class="list-group-item p-2">Total Token credit :-</li>
+                  <li class="list-group-item p-2 fw-bold" id="title"></li>
+                  <span class="list-group-item p-2 fw-bold"
+                    >Free Credits :-</span
+                  >
+                  <li
+                    class="list-group-item p-2 fw-bold display-6"
+                    id="credit"
+                  ></li>
                 </ul>
                 <div class="p-2">
-                  <label for="avatar" class="p-2 mb-2">Avatar</label>
-                  <input name="avatar" type="url" class="form-control" />
-                  <button
-                    class="fw-bold btn avatar-button p-3 mt-3 w-100 btn-lg"
-                  >
-                    Update Avatar
-                  </button>
+                  <form action="" id="avatar">
+                    <label for="avatar" class="p-2 fw-bold mb-2">Avatar</label>
+                    <input name="avatar" type="url" class="form-control" />
+                    <button
+                      class="fw-bold btn avatar-button p-3 mt-3 w-100 btn-lg"
+                      type="submit"
+                    >
+                      Update Avatar
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
@@ -216,5 +224,6 @@
       </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/handler/edit_avatarhandler.js" type="module"></script>
   </body>
 </html>

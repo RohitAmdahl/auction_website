@@ -8,6 +8,7 @@ export async function login(url, data) {
       method,
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(data),
     };
@@ -21,12 +22,14 @@ export async function login(url, data) {
     localStorage.setItem("userName", user);
     const credit = results.credits;
     localStorage.setItem("credits", credit);
+    //
+    const profile = results.profile;
+    localStorage.setItem("profile", profile);
 
     if (accessToken) {
       window.location.replace("/profile.html");
-      console.log("I got a token, and should be logged in");
     } else {
-      console.log("I did not get a token, so either a wrong email or password");
+      alert, "something went wrong";
     }
   } catch (error) {
     console.log(error);
