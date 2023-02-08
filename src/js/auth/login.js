@@ -35,11 +35,15 @@ export async function login(url, data) {
       credits: results.credits,
     });
 
-    if (accessToken) {
+    if (response.ok) {
       window.location.replace("/profile.html");
-    } else {
-      alert, "something went wrong";
     }
+
+    // if (accessToken) {
+    //   window.location.replace("/profile.html");
+    // } else {
+    //   alert, "something went wrong";
+    // }
   } catch (error) {
     console.log(error);
   }
