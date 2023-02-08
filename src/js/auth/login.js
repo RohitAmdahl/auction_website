@@ -22,7 +22,7 @@ export async function login(url, data) {
     localStorage.setItem("userName", user);
     const credit = results.credits;
     localStorage.setItem("credits", credit);
-    //
+
     const profile = results.profile;
     localStorage.setItem("profile", profile);
 
