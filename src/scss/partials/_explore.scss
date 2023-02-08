@@ -19,11 +19,16 @@
 }
 .explore-cards {
   width: 20rem;
+  height: 35rem;
 }
 
 .explore-products {
   width: 185px;
-  height: 180px;
+  // height: 180px;
+}
+.explore-media {
+  height: 250px;
+  object-fit: cover;
 }
 
 .loader {

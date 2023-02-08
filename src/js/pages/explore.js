@@ -21,8 +21,6 @@ async function auctionCards() {
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
-                    <li class="list-group-item"> Description ;- ${element.description}</li>
-                    <li class="list-group-item">${element.tags[0]}</li>
                     <li class="list-group-item bids lead">Bid :-  ${element._count.bids}</li>
                     <li class="list-group-item">Ends at :-  ${element.endsAt}</li>
                   </ul>
