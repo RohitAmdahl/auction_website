@@ -22,8 +22,8 @@ async function register(registerUrl, data) {
     }
     const results = await response.json();
     console.log(results);
-    const profile = results.profile;
-    localStorage.saveItem("profile", profile);
+    // const profile = results.profile;
+    // localStorage.saveItem("profile", profile);
   } catch (error) {
     console.log(error);
   }
@@ -36,7 +36,8 @@ form.addEventListener("submit", (e) => {
   const name = form.name.value;
   const email = form.email.value;
   const password = form.password.value;
-  const registerForm = { form, name, email, password };
+  const avatar = form.avatar.value;
+  const registerForm = { form, name, email, password, avatar };
   console.log(registerForm);
 
   setTimeout(() => {
