@@ -23,8 +23,9 @@ export async function editAvatar(avatarImage) {
     const json = await response.json();
     console.log(json);
 
-    // const avatar = json.avatar;
-    // localStorage.setItem("profile", avatar);
+    const avatar = json.avatar;
+    console.log(avatar);
+    localStorage.setItem("profile", avatar);
   } catch (error) {
     console.log(error);
   }
