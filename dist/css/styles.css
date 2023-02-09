@@ -10772,6 +10772,157 @@ textarea.form-control-lg {
 body {
   font-family: "Poppins", sans-serif, Arial;
   background: #f9f7f7;
+  color: #373737;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.cta-login {
+  max-width: 120px;
+  outline: 2px solid #99e3e5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-login:hover {
+  background: #99e3e5;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cta-signup {
+  max-width: 120px;
+  outline: 2px solid #fcb500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-signup:hover {
+  background-color: #fff7d6;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cta-login-cta {
+  max-width: 180px;
+  outline: 2px solid #99e3e5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-login-cta:hover {
+  background: #99e3e5;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cta-signup-cta {
+  max-width: 180px;
+  outline: 2px solid #fcb500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.cta-signup-cta:hover {
+  background-color: #fff7d6;
+  transform: translateY(5px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.icon {
+  max-width: 29px;
+}
+
+.hero-background-img {
+  background-image: url(/pictures/hero-banner-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: center;
+  height: 400px;
+}
+
+.hero-heading {
+  background-color: #fff7d6;
+}
+
+.big-btn {
+  max-width: 350px;
+  background: #fff7d6;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.2s;
+  outline: 2px solid #fcb500;
+}
+.big-btn:hover {
+  background: #fcb500;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.auction-hero {
+  max-width: 400px;
+}
+
+.credit {
+  color: #003e9b;
+}
+
+.footer {
+  background-color: #ced4da;
+}
+
+.click-me {
+  max-width: 32px;
+}
+
+.explore-img {
+  background-image: url(/pictures/explore.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.explore-action {
+  max-width: 150px;
+  background-color: #fcb500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.explore-action:hover {
+  background-color: #fff7d6;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+.explore-cards {
+  width: 25rem;
+}
+
+.Specific-picture {
+  max-width: 350px;
+}
+
+.cta-logout-cta {
+  max-width: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: #ff7a00;
+  outline: 2px solid #fff7d6;
+}
+.cta-logout-cta:hover {
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  background: #ff7a00;
+}
+
+.profile-pic {
+  max-width: 150px;
+}
+
+.avatar-button {
+  max-width: 350px;
+  background: #99e3e5;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.2s;
+  outline: 2px solid #fcb500;
+}
+.avatar-button:hover {
+  background: #fcb500;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=styles.css.map */

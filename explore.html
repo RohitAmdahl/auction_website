@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta
       name="description"
-      content="Online auction website for sell and bid Unique items bid is from 1 credit and 1000 free credit"
+      content="Online auction website for sell and bid Unique items bid is from 1 credit and 1000 free credit, Buy and sell your products / goods"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
       rel="stylesheet"
     />
-    <title>Auction | Home page</title>
+    <title>Auction | Explore page</title>
     <link rel="stylesheet" href="dist/css/styles.css" />
   </head>
   <body>
@@ -46,14 +46,16 @@
                 >
                   <li class="nav-item lead">
                     <a
-                      class="nav-link active fw-bold ms-3"
+                      class="nav-link ms-3"
                       aria-current="page"
                       href="index.html"
                       >Home</a
                     >
                   </li>
-                  <li class="nav-item lead">
-                    <a class="nav-link ms-3" href="explore.html">Explore</a>
+                  <li class="nav-item lead fw-bold">
+                    <a class="nav-link ms-3 active" href="explore.html"
+                      >Explore</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -79,62 +81,80 @@
       </div>
     </header>
     <main>
-      <section class="hero-background-img">
+      <section class="explore-img">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-1">
               <h1>
                 <span
-                  class="hero-heading fw-bold d-flex justify-content-center p-3 mt-5 ms-5 shadow-lg p-3 mb-5 rounded"
-                  >Uncover Hidden Treasures!</span
+                  class="hero-heading fw-bold d-flex justify-content-center p-3 mt-5 ms-5 shadow-lg mb-5 rounded"
+                  >Search Hidden Treasures & Login for BID!</span
                 >
               </h1>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container d-flex justify-content-center w-100">
-          <a
-            href="explore.html"
-            class="fw-bold btn big-btn p-3 mt-3 w-100 btn-lg"
-            role="button"
-            aria-disabled="true"
-            >View All Auctions
-            <span
-              ><img
-                src="/pictures/icons/click-me.png"
-                alt="right arrow"
-                class="click-me"
-            /></span>
-          </a>
-        </div>
-      </section>
       <section class="container">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-3">
-              <ul class="list-group mt-5">
-                <li class="fw-bold list-group p-2 mb-1 lead">Unique items</li>
-                <li class="fw-bold list-group p-2 mb-1 lead credit">
-                  Bid with 1 credit
-                </li>
-                <li class="fw-bold list-group p-2 mb-1 lead">
-                  Curated by experts full security
-                </li>
-                <li class="fw-bold list-group p-2 mb-1 display-6">
-                  Get first free 1000 credit for BID
-                </li>
-              </ul>
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
+              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
+                Oldest
+              </button>
+              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
+                latest
+              </button>
+              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
+                testing
+              </button>
             </div>
-            <div
-              class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
-            >
-              <img
-                src="pictures/listing-hero.jpg"
-                alt="illustration of online auction women in front of online biding"
-                class="w-100 rounded-circle auction-hero mb-5 shadow-lg bg-white rounded"
-              />
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
+              <div class="mb-3 d-flex">
+                <input
+                  type="text"
+                  class="form-control mt-3"
+                  name="text"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
+              <div class="card explore-cards">
+                <img
+                  src="/pictures/login-hero.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Title :- Name of the item</li>
+                    <li class="list-group-item">description :-</li>
+                    <li class="list-group-item">Date :-</li>
+                    <li class="list-group-item">Time :-</li>
+                    <li class="list-group-item">Bid :-</li>
+                  </ul>
+                  <a
+                    href="scpecific.html"
+                    class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
+                    >View item</a
+                  >
+                  <button class="btn big-btn btn-lg ms-5 mt-3 fw-bold">
+                    Bid now
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
