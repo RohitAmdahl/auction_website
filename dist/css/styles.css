@@ -10928,11 +10928,15 @@ body {
 }
 
 .profile-info {
-  width: 14rem;
+  width: 15rem;
 }
 
-.sellerPicture {
+.seller-Picture {
   object-fit: cover;
+}
+
+.profilGoods {
+  max-width: 250px;
 }
 
 .cta-logout-cta {
