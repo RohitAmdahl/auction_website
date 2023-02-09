@@ -3,6 +3,8 @@ const base_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const bidNow = document.querySelector(".bidForm");
 console.log(bidNow);
 
+const bidInput = document.querySelector(".bid-input");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 console.log(params);
@@ -26,14 +28,16 @@ async function bidProducts(amount) {
         "Content-type": "application/json ",
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ amount: 10 }),
+      body: JSON.stringify({ amount: Number(bidInput.value) }),
     };
     const response = await fetch(`${base_Url}/${id}/bids`, BidData);
     console.log(response);
     const json = await response.json();
+
     console.log(json);
+    console.log("Error message when bidding: ", json.errors[0].message);
   } catch (error) {
-    console.log(error);
+    console.log("Error message when bidding: ", json.errors[0].message);
   }
 }
 
