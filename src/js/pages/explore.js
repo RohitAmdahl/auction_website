@@ -1,4 +1,5 @@
-const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
+// const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
+const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true`;
 const auctionProducts = document.querySelector("#auction");
 // let date = `${items.created}`;
 // let update = date.substring(0, 10);
@@ -24,11 +25,9 @@ async function auctionCards() {
                     <li class="list-group-item bids lead">Bid :-  ${element._count.bids}</li>
                     <li class="list-group-item">Ends at :-  ${element.endsAt}</li>
                   </ul>
-                  <a
-                    href="scpecific.html"
-                    class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
-                    >View item</a
-                  >
+                  <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
+                   href="scpecific.html?id=${element.id}">View item</a>
+
 
                 </div>
               </div>
