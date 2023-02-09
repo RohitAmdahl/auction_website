@@ -3,6 +3,7 @@ const listing_Url = `api/v1/auction/listings`;
 // const user = JSON.parse(localStorage.getItem("user"));
 // const profileName = user.name;
 const profile = document.querySelector(".profile-info");
+const history = document.querySelector("#history");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -34,6 +35,7 @@ async function biderHistory() {
     profileName.innerHTML = json.seller.name;
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = json.seller.email;
+    // bid history for profile
   } catch (error) {
     console.log(error);
   }
