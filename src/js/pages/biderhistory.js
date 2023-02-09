@@ -37,7 +37,8 @@ async function biderHistory() {
     profileName.innerHTML = results.seller.name;
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
-    // bid history for profile
+
+    // bid history profile
 
     const list = document.createElement("li");
     list.classList.add("list-group-item");
