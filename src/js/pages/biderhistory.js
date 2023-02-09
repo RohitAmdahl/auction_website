@@ -42,10 +42,10 @@ async function biderHistory() {
 
     const list = document.createElement("li");
     list.classList.add("list-group-item");
-    list.innerText = results.bids[0].bidderName;
+    list.innerText = "Name,   " + results.bids[0].bidderName;
     const spa_Ner = document.createElement("span");
     spa_Ner.classList.add("ms-3");
-    spa_Ner.innerText = results.bids[0].amount;
+    spa_Ner.innerText = "Amount,   " + results.bids[0].amount;
     history.appendChild(list);
     list.appendChild(spa_Ner);
   } catch (error) {
