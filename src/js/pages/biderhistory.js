@@ -26,20 +26,27 @@ async function biderHistory() {
       Data
     );
 
-    const json = await response.json();
-    console.log(json);
+    const results = await response.json();
+
+    console.log(results);
+
     // thumbnail for profile
     const img = document.querySelector(".sellerPicture");
-    img.src = json.seller.avatar;
+    img.src = results.seller.avatar;
     const profileName = document.querySelector("#profileName");
-    profileName.innerHTML = json.seller.name;
+    profileName.innerHTML = results.seller.name;
     const profileEmail = document.querySelector("#emailName");
-    profileEmail.innerHTML = json.seller.email;
+    profileEmail.innerHTML = results.seller.email;
     // bid history for profile
+
     const list = document.createElement("li");
     list.classList.add("list-group-item");
-    const span = document.createElement("span");
-    span.classList.add("ms-3");
+    list.innerText = results.bids[0].bidderName;
+    const spa_Ner = document.createElement("span");
+    spa_Ner.classList.add("ms-3");
+    spa_Ner.innerText = results.bids[0].amount;
+    history.appendChild(list);
+    list.appendChild(spa_Ner);
   } catch (error) {
     console.log(error);
   }

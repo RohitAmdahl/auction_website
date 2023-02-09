@@ -35,7 +35,6 @@ async function bidProducts(amount) {
     const json = await response.json();
 
     console.log(json);
-    console.log("Error message when bidding: ", json.errors[0].message);
   } catch (error) {
     console.log("Error message when bidding: ", json.errors[0].message);
   }
