@@ -63,13 +63,13 @@
                 role="button"
                 >Log In</a
               >
-              <!-- <a
+              <a
                 href="signup.html"
                 class="ms-5 btn cta-signup fw-bold active w-100 btn-lg"
                 role="button"
               >
                 Sign UP
-              </a> -->
+              </a>
             </div>
           </div>
         </nav>
@@ -101,7 +101,7 @@
             </div>
 
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5 card">
-              <form class="form-signin mt-5" method="post">
+              <form class="form-signin mt-5" method="post" id="register-form">
                 <div class="form-group mb-3">
                   <label for="name" class="form-label pb-3 fw-bold">Name</label>
                   <input
@@ -136,25 +136,29 @@
                     required
                   />
                 </div>
-              </form>
-              <div
-                class="d-flex flex-column justify-content-center align-items-center"
-              >
-                <span class="m-2 d-flex credit"
-                  >Don't have an account ? create an Account
-                </span>
-                <button
-                  class="mt-2 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
+                <div class="mb-3 form-label-group">
+                  <label for="avatar" class="p-2 fw-bold mb-2">Avatar</label>
+                  <input name="avatar" type="url" class="form-control" />
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center"
                 >
-                  Sign UP
-                  <span
-                    ><img
-                      class="click-me"
-                      src="/pictures/icons/click-me.png"
-                      alt="right arrow"
-                  /></span>
-                </button>
-              </div>
+                  <span class="m-2 d-flex credit"
+                    >Don't have an account ? create an Account
+                  </span>
+                  <button
+                    class="mt-2 mb-5 btn cta-signup-cta fw-bold w-100 btn-lg w-100"
+                  >
+                    Sign UP
+                    <span
+                      ><img
+                        class="click-me"
+                        src="/pictures/icons/click-me.png"
+                        alt="right arrow"
+                    /></span>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -172,5 +176,6 @@
       </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/auth/register.js" type="module"></script>
   </body>
 </html>

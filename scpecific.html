@@ -100,6 +100,7 @@
               <a href="explore.html" class="btn btn-link fw-bold lead"
                 >Back To Auctions</a
               >
+
               <hr />
             </div>
           </div>
@@ -107,13 +108,13 @@
       </section>
       <section>
         <div class="container">
-          <div class="row">
+          <div class="row" id="singleProduct">
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
               <div class="d-flex justify-content-center">
                 <img
-                  src="/pictures/login-hero.jpg"
-                  class="card-img-top Specific-picture"
-                  alt="..."
+                  src=""
+                  class="card-img-top Specific-picture explore-media"
+                  alt="product pictures"
                 />
               </div>
             </div>
@@ -122,31 +123,37 @@
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item p-3">
-                      <h1>Title :- Name</h1>
+                      <span class="title lead display-6"></span>
                     </li>
                     <li class="list-group-item p-3">
-                      <span class="ps-2">description :-</span>description
+                      description
+                      <span class="ps-2 description"></span>
                     </li>
                     <li class="list-group-item p-3">
-                      <span class="ps-2">Date :-</span>date
+                      date
+                      <span class="ps-2 date"></span>
                     </li>
+                    <!-- <li class="list-group-item p-3">
+                      Tag <span class="ps-2 tag"></span>
+                    </li> -->
                     <li class="list-group-item p-3">
-                      Time<span class="ps-2">Time</span> 25
+                      Highest bid :- <span class="ps-2 bid lead"></span>
                     </li>
-                    <li class="list-group-item p-3">
-                      Highest <span class="ps-2">Highest bId</span>
-                    </li>
+                  </ul>
+                  <form method="" class="bidForm">
                     <input
                       type="number"
                       placeholder="Place your bid"
                       class="form-control mt-3"
+                      name="number"
                     />
                     <button
                       class="btn big-btn btn-lg mt-5 mb-3 d-flex justify-content-center fw-bold"
+                      id="bid-cta-button"
                     >
                       Bid Now
                     </button>
-                  </ul>
+                  </form>
                 </div>
               </div>
             </div>
@@ -166,5 +173,8 @@
       </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/pages/specific.js" type="module"></script>
+    <!-- <script src="src/js/pages/bider.js" type="module"></script> -->
+    <script src="src/js/handler/bid.js" type="module"></script>
   </body>
 </html>
