@@ -4,6 +4,7 @@ const listing_Url = `api/v1/auction/listings`;
 // const profileName = user.name;
 const profile = document.querySelector(".profile-info");
 const history = document.querySelector("#history");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
@@ -29,13 +30,16 @@ async function biderHistory() {
     console.log(json);
     // thumbnail for profile
     const img = document.querySelector(".sellerPicture");
-
     img.src = json.seller.avatar;
     const profileName = document.querySelector("#profileName");
     profileName.innerHTML = json.seller.name;
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = json.seller.email;
     // bid history for profile
+    const list = document.createElement("li");
+    list.classList.add("list-group-item");
+    const span = document.createElement("span");
+    span.classList.add("ms-3");
   } catch (error) {
     console.log(error);
   }
