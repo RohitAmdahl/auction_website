@@ -23,7 +23,7 @@ async function auctionCards() {
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
                     <li class="list-group-item bids lead">Bid :-  ${element._count.bids}</li>
-                    <li class="list-group-item">Ends at :-  ${element.endsAt}</li>
+                    <li class="list-group-item">${element.endsAt}</li>
                   </ul>
                   <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
                    href="scpecific.html?id=${element.id}">View item</a>
