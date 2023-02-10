@@ -8,7 +8,7 @@ async function auctionCards() {
     const response = await fetch(cardsUrl);
     console.log(response);
     if (!response.ok) {
-      return "error", `there was a error featching the products:`;
+      return "error", `there was a error fetching the products:`;
     }
     const results = await response.json();
     console.log(results);
@@ -27,8 +27,6 @@ async function auctionCards() {
                   </ul>
                   <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
                    href="scpecific.html?id=${element.id}">View item</a>
-
-
                 </div>
               </div>
             </div>`;

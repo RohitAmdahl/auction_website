@@ -10960,6 +10960,10 @@ body {
   max-width: 100px;
 }
 
+.profile-cards {
+  width: 25rem;
+}
+
 .avatar-button {
   max-width: 200px;
   background: #99e3e5;
