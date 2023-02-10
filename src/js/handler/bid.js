@@ -36,19 +36,22 @@ async function bidProducts(amount) {
 
     console.log(json);
   } catch (error) {
-    console.log("Error message when bidding: ", json.errors[0].message);
+    console.log(error);
+    // console.log("Error message when bidding: ", json.errors[0].message);
   }
 }
 
 function bidNumberProducts() {
   bidNow.addEventListener("submit", (e) => {
     e.preventDefault();
+
     console.log(e);
     const bidNow = e.target;
     console.log(bidNow);
     const numberValue = bidNow.value;
     console.log(numberValue);
     bidProducts(numberValue);
+    // location.reload();
   });
 }
 bidNumberProducts();
