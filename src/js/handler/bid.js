@@ -32,12 +32,16 @@ async function bidProducts(amount) {
     };
     const response = await fetch(`${base_Url}/${id}/bids`, BidData);
     console.log(response);
+    if (response.ok) {
+      location.reload();
+    }
+
     const json = await response.json();
 
     console.log(json);
   } catch (error) {
     console.log(error);
-    // console.log("Error message when bidding: ", json.errors[0].message);
+    console.log("Error message when bidding: ", json.errors[0].message);
   }
 }
 
@@ -54,4 +58,5 @@ function bidNumberProducts() {
     // location.reload();
   });
 }
+
 bidNumberProducts();
