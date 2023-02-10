@@ -91,30 +91,72 @@
         <div class="row">
           <div
             class="col-12 col-lg-6 col-md-12 col-sm-12 mt-5"
-            id="listingCards"
+            id="updatelisting"
           >
-            <!-- <div class="card mb-5 p-3">
-              <img
-                src="pictures/icons/profile.png"
-                class="profile-pic"
-                alt="profile picture w-100"
-                id="profile_img"
-              />
-              <div class="card-body">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item p-2 fw-bold" id="email"></li>
-                  <li class="list-group-item p-2 fw-bold" id="title"></li>
-                  <span class="list-group-item p-2 fw-bold"
-                    >Free Credits :-</span
+            <div class="form card mb-5 p-3">
+              <form id="listing-listing" class="selling">
+                <div class="display-6 fw-bold">Update Listing</div>
+                <div>
+                  <label for="title" class="text-muted fw-bold p-2"
+                    >Title</label
                   >
-                  <li
-                    class="list-group-item p-2 fw-bold display-6"
-                    id="credit"
-                  ></li>
-                </ul>
-                <div class="p-2"></div>
-              </div>
-            </div> -->
+                  <input
+                    name="title"
+                    type="text"
+                    class="form-control"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <label for="textpost" class="text-muted fw-bold p-2" p-2=""
+                    >Description</label
+                  >
+                  <textarea
+                    name="text"
+                    id="text"
+                    cols="30"
+                    rows="2"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div>
+                  <label for="Media" class="text-muted fw-bold p-2"
+                    >Media</label
+                  >
+                  <input name="media" type="url" class="form-control" />
+                </div>
+                <div>
+                  <label for="tags" class="fw-bold text-muted p-2"> Tags</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="tagInput"
+                    name="tags"
+                  />
+                </div>
+                <div class="p-2">
+                  <label for="date and time" class="fw-bold text-muted p-2"
+                    >Date and Time</label
+                  >
+                  <input
+                    class="form- control p-2"
+                    type="datetime-local"
+                    id="endsAt"
+                    name="endsAt"
+                    aria-describedby="formError"
+                    placeholder="dd/mm/yyyy"
+                  />
+                </div>
+
+                <button
+                  class="fw-bold btn cta-signup btn-lg p-3 mt-3 w-100"
+                  type="submit"
+                  id="update-listing-listing"
+                >
+                  Update
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
