@@ -14,7 +14,7 @@ async function singleData() {
   const Data = {
     method: "get",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json charset=UTF-8",
       Authorization: `Bearer ${token}`,
     },
   };

@@ -8,7 +8,7 @@ export async function editAvatar(avatarImage) {
     const Data = {
       method: "get",
       headers: {
-        "Content-type": "application/json ",
+        "Content-type": "application/json charset=UTF-8 ",
         Authorization: `Bearer ${token}`,
       },
     };

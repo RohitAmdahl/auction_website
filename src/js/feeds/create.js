@@ -15,8 +15,8 @@ export async function createListing(create) {
       body: JSON.stringify({
         title: create.title,
         description: create.description,
-        tags: tags,
-        media: media,
+        tags,
+        media,
         endsAt: create.date,
       }),
     };
