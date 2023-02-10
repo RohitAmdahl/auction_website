@@ -16,7 +16,6 @@ function createListingListener() {
     const id = form.id.value;
     const create_Listing = { form, title, description, media, tag, endsAt, id };
     createListing(create_Listing);
-    form.reset();
   });
 }
 createListingListener();
