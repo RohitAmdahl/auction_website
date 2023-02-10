@@ -33,10 +33,10 @@ async function biderHistory() {
       const history = document.querySelector("#history");
       const list = document.createElement("li");
       list.classList.add("list-group-item", "list_class");
-      list.innerText = "Name,   " + element.bidderName;
+      list.innerText = element.bidderName;
       const spa_Ner = document.createElement("span");
       spa_Ner.classList.add("ms-3");
-      spa_Ner.innerText = "Amount,   " + element.amount;
+      spa_Ner.innerText = element.amount;
       history.appendChild(list);
       list.appendChild(spa_Ner);
     });
