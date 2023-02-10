@@ -31,17 +31,14 @@ async function biderHistory() {
     console.log(json);
     json.forEach((element) => {
       const history = document.querySelector("#history");
-      history.innerHTML += `<li class="list-group-item list_class">
-                    ${element.bidderName}<span class="ms-3">  ${element.amount} </span>
-                </li>`;
-      // const list = document.createElement("li");
-      // list.classList.add("list-group-item", "list_class");
-      // list.innerText = "Name,   " + element.bids[0].bidderName;
-      // const spa_Ner = document.createElement("span");
-      // spa_Ner.classList.add("ms-3");
-      // spa_Ner.innerText = "Amount,   " + element.bids[0].amount;
-      // history.appendChild(list);
-      // list.appendChild(spa_Ner);
+      const list = document.createElement("li");
+      list.classList.add("list-group-item", "list_class");
+      list.innerText = "Name,   " + element.bidderName;
+      const spa_Ner = document.createElement("span");
+      spa_Ner.classList.add("ms-3");
+      spa_Ner.innerText = "Amount,   " + element.amount;
+      history.appendChild(list);
+      list.appendChild(spa_Ner);
     });
 
     console.log(results);
