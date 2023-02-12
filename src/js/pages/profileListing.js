@@ -48,6 +48,7 @@ export async function sellerProfile() {
       date.innerText = ListElement.endsAt;
       const divButton = document.createElement("div");
       const update = document.createElement("a");
+      update.href = `updatelisting.html?id=${ListElement.id}`;
       update.innerText = "update";
 
       const deleteCta = document.createElement("button");

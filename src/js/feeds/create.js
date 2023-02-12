@@ -37,15 +37,3 @@ export async function createListing(create) {
     console.log(error);
   }
 }
-
-//  let media = [];
-
-// mediaGallery.forEach((input) => {
-//   if (input.value !== "") {
-//     media.push(input.value);
-//   }
-// });
-
-// if (!media || media === [] || media === "") {
-//   delete options.media;
-// }
