@@ -23,25 +23,6 @@ export async function sellerProfile() {
     const json = await response.json();
     console.log(json);
     json.forEach((ListElement) => {
-      // listingCards.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4 mb-5">
-      //         <div class="card explore-cards">
-      //           <img
-      //             src="${ListElement.media[0]}"
-      //             class="card-img-top explore-media p-5"
-      //             id = "picture"
-      //           />
-      //           <div class="card-body">
-      //             <ul class="list-group list-group-flush">
-      //               <li class="list-group-item"> ${ListElement.title}</li>
-      //               <li class="list-group-item"> ${ListElement.description}</li>
-      //               <li class="list-group-item">  ${ListElement.tags[0]}</li>
-      //               <li class="list-group-item"> ${ListElement.endsAt}</li>
-      //             </ul>
-      //             <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
-      //              href="updatelisting.html?id=${ListElement.id}">Update</a>
-      //              <button class='btn big-btn btn-lg ms-3 mt-3 fw-bold delete' id=" ">delete</button>
-      //           </div>
-      //       </div>`;
       const mainCol = document.createElement("div");
       mainCol.classList.add(
         "col-12",
