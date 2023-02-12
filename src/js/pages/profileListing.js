@@ -66,8 +66,9 @@ export async function sellerProfile() {
       const date = document.createElement("li");
       date.innerText = ListElement.endsAt;
       const divButton = document.createElement("div");
-      const update = document.createElement("button");
+      const update = document.createElement("a");
       update.innerText = "update";
+
       const deleteCta = document.createElement("button");
       deleteCta.innerText = "delete";
 
