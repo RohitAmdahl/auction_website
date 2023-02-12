@@ -3,10 +3,10 @@ import { createListing } from "../feeds/create.js";
 
 function createListingListener() {
   const form = document.querySelector(".selling");
-  console.log(form);
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(e);
+
     const form = e.target;
     const title = form[0].value;
 
@@ -40,7 +40,6 @@ function createListingListener() {
       endsAt,
     };
     createListing(create_Listing);
-    console.log(createListing);
   });
 }
 createListingListener();
