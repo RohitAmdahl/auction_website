@@ -27,6 +27,9 @@ export async function createListing(create) {
     };
     // console.log(create.endsAt.toISOString());
     const response = await fetch(url, options);
+    if (response.ok) {
+      location.reload();
+    }
     console.log(response);
     const json = await response.json();
     console.log(json);
