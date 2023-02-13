@@ -1,22 +1,25 @@
 import { updateListingUrl } from "../feeds/update.js";
+import { updateListingContent } from "../feeds/update.js";
+import { updateValue } from "../extension/updateValue.js";
+updateValue();
 
 function updateListingListener() {
-  // const form = document.querySelector(".selling");
   const url = new URL(location.href);
   console.log(url);
   const id = url.searchParams.get("id");
   console.log(id);
-
-  form.addEventListener("submit", (e) => {
-    const updateListing = document.querySelector(".updatelisting");
+  const updateForm = document.querySelector("#listing-listing");
+  console.log(updateForm);
+  updateForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const form = e.target;
-    const title = form[0].value;
-    const description = form[1].value;
-    const media = form[2].value;
-    const tags = form[3].value;
-    const endsAt = form[4].value;
+    const updateForm = e.target;
+    const title = updateForm[0].value;
+    const description = updateForm[1].value;
+    const media = updateForm[2].value;
+    const tags = updateForm[3].value;
+    const endsAt = updateForm[4].value;
+    const id = updateForm[5].value;
 
     if (tags.trim()) {
       tags.split(",");
@@ -29,15 +32,16 @@ function updateListingListener() {
       console.log(" this is not working");
     }
 
-    const create_Listing = {
-      form,
+    const Listing = {
+      updateForm,
       title,
       description,
       media,
       tags,
       endsAt,
+      id,
     };
-    updateListingUrl(create_Listing);
+    updateListingContent(Listing);
   });
 }
 updateListingListener();

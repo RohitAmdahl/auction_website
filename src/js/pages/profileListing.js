@@ -45,9 +45,10 @@ export async function sellerProfile() {
       const tags = document.createElement("li");
       tags.innerText = ListElement.tags[0];
       const date = document.createElement("li");
-      date.innerText = ListElement.endsAt;
+      date.innerText = new Date(ListElement.endsAt).toLocaleDateString();
       const divButton = document.createElement("div");
       const update = document.createElement("a");
+      console.log(update);
       update.href = `updatelisting.html?id=${ListElement.id}`;
       update.innerText = "update";
 

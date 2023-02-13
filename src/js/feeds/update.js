@@ -1,6 +1,10 @@
 export const updateListingUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
 
-export async function createListing(create) {
+const url = new URL(location.href);
+const id = url.searchParams.get("id");
+console.log(id);
+
+export async function updateListingContent(create) {
   console.log(create);
   console.log(create.tags);
   try {
@@ -9,7 +13,7 @@ export async function createListing(create) {
     console.log(tags);
     const media = create.media.split(",");
     console.log(media);
-    const endsAt = new Date(create.endsAt).toISOString();
+
     const token = localStorage.getItem("Token");
     const options = {
       method: "put",
@@ -22,13 +26,15 @@ export async function createListing(create) {
         description: create.description,
         tags,
         media,
-        endsAt,
       }),
     };
     // console.log(create.endsAt.toISOString());
     const response = await fetch(`${updateListingUrl}/${id}`, options);
     if (response.ok) {
-      location.reload();
+      const msg = document.querySelector(".message");
+      msg.innerHTML = `<p class="alert alert-success">Your list is updated please go back to profile and make your all is correct</p>`;
+    } else {
+      msg.classList.remove("message");
     }
     console.log(response);
     const json = await response.json();
