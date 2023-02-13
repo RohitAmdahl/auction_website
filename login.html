@@ -117,6 +117,9 @@
                     title="Only Noroff student or teacher emails are valid."
                     required
                   />
+                  <div id="emailHelp" class="form-text">
+                    name@noroff.no or first.last@stud.noroff.no.
+                  </div>
                 </div>
                 <div class="mb-3 form-label-group">
                   <label for="Password" class="pb-3 fw-bold">Password</label>
@@ -125,10 +128,12 @@
                     type="password"
                     id="Passwordinput"
                     class="form-control pb-3"
-                    placeholder="The password value must be at least 8 characters."
                     minlength="8"
                     required
                   />
+                  <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8 characters long,
+                  </div>
                 </div>
 
                 <div class="d-flex justify-content-center">

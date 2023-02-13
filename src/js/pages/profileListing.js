@@ -48,7 +48,8 @@ export async function sellerProfile() {
       date.innerText = new Date(ListElement.endsAt).toLocaleDateString();
       const divButton = document.createElement("div");
       const update = document.createElement("a");
-      console.log(update);
+      const view = document.createElement("a");
+
       update.href = `updatelisting.html?id=${ListElement.id}`;
       update.innerText = "update";
 
@@ -56,30 +57,48 @@ export async function sellerProfile() {
       deleteCta.innerText = "delete";
 
       img.classList.add("card-img-top", "explore-media", "p-5");
-      img.id = "picture"; // id missing
+      img.id = "picture";
       DivCardBody.classList.add("card-body");
       listGroup.classList.add("list-group", "list-group-flush");
       title.classList.add("list-group-item");
       description.classList.add("list-group-item");
       tags.classList.add("list-group-item");
       date.classList.add("list-group-item");
-      divButton.classList.add("d-flex", "justify-content-around", "m-4");
+      divButton.classList.add("d-flex", "flex-column", "mt-1", "p-2");
       update.classList.add(
         "d-flex",
         "btn",
         "fw-bold",
-        "btn-lg",
+        "btn-sm",
         "big-btn",
-        "profileListingCta"
+        "profileListingCta",
+        "p-2",
+        "mt-3"
       );
       deleteCta.classList.add(
         "d-flex",
         "btn",
         "fw-bold",
-        "btn-lg",
+        "btn-sm",
         "big-btn",
-        "profileListingCta"
+        "profileListingCta",
+        "p-2",
+        "mt-3"
       );
+
+      view.classList.add(
+        "d-flex",
+        "btn",
+        "fw-bold",
+        "btn-sm",
+        "big-btn",
+        "profileListingCta",
+        "mt-3",
+        "p-2",
+        "avatar-button"
+      );
+      view.innerText = "view List";
+      view.href = `/scpecific.html?id=${ListElement.id}`;
 
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
@@ -93,6 +112,7 @@ export async function sellerProfile() {
       DivCardBody.appendChild(divButton);
       divButton.appendChild(update);
       divButton.appendChild(deleteCta);
+      divButton.appendChild(view);
     });
   } catch (error) {
     console.log(error);
