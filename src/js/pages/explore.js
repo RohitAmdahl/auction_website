@@ -1,8 +1,7 @@
 // const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true`;
 const auctionProducts = document.querySelector("#auction");
-// let date = `${items.created}`;
-// let update = date.substring(0, 10);
+
 async function auctionCards() {
   try {
     const response = await fetch(cardsUrl);
@@ -22,8 +21,11 @@ async function auctionCards() {
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
-                    <li class="list-group-item bids lead">Bid :-  ${element._count.bids}</li>
-                    <li class="list-group-item">${element.endsAt}</li>
+                    <li class="list-group-item bids lead">Bid :-  ${
+                      element._count.bids
+                    }</li>
+                    <li class="list-group-item">
+                    ${new Date(element.endsAt).toLocaleDateString()}</li>
                   </ul>
                   <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
                    href="scpecific.html?id=${element.id}">View item</a>
