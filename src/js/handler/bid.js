@@ -47,7 +47,6 @@ function bidNumberProducts() {
     const numberValue = bidNow.value;
     console.log(numberValue);
     bidProducts(numberValue);
-    // location.reload();
   });
 }
 

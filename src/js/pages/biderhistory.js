@@ -19,7 +19,6 @@ async function biderHistory() {
         Authorization: `Bearer ${token}`,
       },
     };
-    console.log(Data);
 
     const response = await fetch(
       `${base_Url}${listing_Url}/${id}/?_seller=true&_bids=true`,
