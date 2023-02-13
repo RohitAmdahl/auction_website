@@ -16,10 +16,7 @@ export async function updateValue() {
   };
   try {
     const response = await fetch(`${single_Url}/${id}`, data);
-    console.log(response);
     const json = await response.json();
-    console.log(json);
-    //
     const title = document.querySelector(".valueTitle");
     title.value = json.title;
     const description = document.querySelector(".description");
@@ -31,6 +28,6 @@ export async function updateValue() {
     const endAt = document.querySelector("#endsAt");
     endAt.value = json.endAt;
   } catch (error) {
-    //
+    console.log(error);
   }
 }

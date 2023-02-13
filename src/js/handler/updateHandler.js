@@ -12,7 +12,6 @@ function updateListingListener() {
   console.log(updateForm);
   updateForm.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const updateForm = e.target;
     const title = updateForm[0].value;
     const description = updateForm[1].value;
