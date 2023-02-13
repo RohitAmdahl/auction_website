@@ -29,7 +29,7 @@ async function singleData() {
     const description = document.querySelector(".description");
     description.innerHTML = data.description;
     const date = document.querySelector(".date");
-    date.innerHTML = data.endsAt;
+    date.innerHTML = new Date(data.endsAt).toLocaleDateString();
     const tag = document.querySelector(".tag");
     // tag.innerHTML = data._count.tag[0];
     const bid = document.querySelector(".bid");

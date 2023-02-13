@@ -32,7 +32,6 @@ async function auctionCards() {
                 </div>
               </div>
             </div>`;
-      //
     });
     console.log(results);
   } catch (error) {
