@@ -10836,7 +10836,7 @@ body {
 }
 
 .hero-heading {
-  background-color: #fff7d6;
+  background-color: #fdfcfb;
 }
 
 .big-btn {
@@ -10847,7 +10847,7 @@ body {
   outline: 2px solid #fcb500;
 }
 .big-btn:hover {
-  background: #fcb500;
+  background: #99e3e5;
   transform: translateY(2px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }

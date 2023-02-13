@@ -27,7 +27,7 @@ async function auctionCards() {
                     <li class="list-group-item">
                     ${new Date(element.endsAt).toLocaleDateString()}</li>
                   </ul>
-                  <a  class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
+                  <a  class="btn big-btn btn-sm ms-3 mt-3 p-3 rounded-2  fw-bold"
                    href="scpecific.html?id=${element.id}">View item</a>
                 </div>
               </div>

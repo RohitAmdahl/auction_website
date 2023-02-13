@@ -25,12 +25,11 @@ async function bidProducts(amount) {
     };
     const response = await fetch(`${base_Url}/${id}/bids`, BidData);
     console.log(response);
+
+    const json = await response.json();
     if (response.ok) {
       location.reload();
     }
-
-    const json = await response.json();
-
     console.log(json);
   } catch (error) {
     console.log(error);

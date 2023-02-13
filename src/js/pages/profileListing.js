@@ -51,10 +51,10 @@ export async function sellerProfile() {
       const view = document.createElement("a");
 
       update.href = `updatelisting.html?id=${ListElement.id}`;
-      update.innerText = "update";
+      update.innerText = "Update";
 
       const deleteCta = document.createElement("button");
-      deleteCta.innerText = "delete";
+      deleteCta.innerText = "Delete";
 
       img.classList.add("card-img-top", "explore-media", "p-5");
       img.id = "picture";
@@ -97,7 +97,7 @@ export async function sellerProfile() {
         "p-2",
         "avatar-button"
       );
-      view.innerText = "view List";
+      view.innerText = "View List";
       view.href = `/scpecific.html?id=${ListElement.id}`;
 
       listingCards.appendChild(mainCol);
