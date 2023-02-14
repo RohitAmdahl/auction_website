@@ -10918,10 +10918,6 @@ body {
   color: #004bbc;
 }
 
-.Specific-picture {
-  max-width: 350px;
-}
-
 .profile-info {
   width: 13rem;
 }
@@ -10937,6 +10933,11 @@ body {
 .list_class {
   display: flex;
   justify-content: space-between;
+}
+
+.Specific-picture {
+  max-width: 485px;
+  width: 100%;
 }
 
 .cta-logout-cta {

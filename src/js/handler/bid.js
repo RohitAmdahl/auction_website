@@ -10,6 +10,7 @@ const params = new URLSearchParams(queryString);
 console.log(params);
 const id = params.get("id");
 console.log(id);
+
 async function bidProducts(amount) {
   try {
     const token = localStorage.getItem("Token");
