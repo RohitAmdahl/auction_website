@@ -21,13 +21,13 @@ async function auctionCards() {
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
-                    <li class="list-group-item bids lead">Bid :-  ${
+                    <li class="list-group-item lead">Bid :-  ${
                       element._count.bids
                     }</li>
                     <li class="list-group-item">
                     ${new Date(element.endsAt).toLocaleDateString()}</li>
                   </ul>
-                  <a  class="btn big-btn btn-sm ms-3 mt-3 p-3 rounded-2  fw-bold"
+                  <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
                    href="scpecific.html?id=${element.id}">View item</a>
                 </div>
               </div>

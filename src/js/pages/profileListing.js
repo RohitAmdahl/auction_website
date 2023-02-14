@@ -64,7 +64,14 @@ export async function sellerProfile() {
       description.classList.add("list-group-item");
       tags.classList.add("list-group-item");
       date.classList.add("list-group-item");
-      divButton.classList.add("d-flex", "flex-column", "mt-1", "p-2");
+      divButton.classList.add(
+        "d-flex",
+        "flex-column",
+        "mt-1",
+        "p-2",
+        "justify-content-center",
+        "d-flex"
+      );
       update.classList.add(
         "d-flex",
         "btn",
@@ -73,7 +80,8 @@ export async function sellerProfile() {
         "big-btn",
         "profileListingCta",
         "p-2",
-        "mt-3"
+        "mt-3",
+        "justify-content-center"
       );
       deleteCta.classList.add(
         "d-flex",
@@ -83,7 +91,8 @@ export async function sellerProfile() {
         "big-btn",
         "profileListingCta",
         "p-2",
-        "mt-3"
+        "mt-3",
+        "justify-content-center"
       );
 
       view.classList.add(
@@ -95,7 +104,7 @@ export async function sellerProfile() {
         "profileListingCta",
         "mt-3",
         "p-2",
-        "avatar-button"
+        "justify-content-center"
       );
       view.innerText = "View List";
       view.href = `/scpecific.html?id=${ListElement.id}`;
