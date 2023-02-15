@@ -1,7 +1,7 @@
 // const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true`;
 const auctionProducts = document.querySelector("#auction");
-let product = [];
+// let product = [];
 
 async function auctionCards() {
   try {
@@ -12,9 +12,8 @@ async function auctionCards() {
     }
     const results = await response.json();
     console.log(results);
-    results.map((element) => {
-      product =
-        auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
+    results.forEach((element) => {
+      auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
               <div class="card explore-cards">
                 <img
                   src="${element.media[0]}"
@@ -35,6 +34,7 @@ async function auctionCards() {
               </div>
             </div>`;
     });
+
     console.log(results);
   } catch (error) {
     console.log(error);

@@ -121,16 +121,23 @@
             </div>
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
               <div class="mb-3 d-flex">
-                <input
-                  type="text"
-                  class="form-control mt-3"
-                  name="text"
-                  aria-describedby="helpId"
-                  placeholder=""
-                />
-                <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
-                  Search
-                </button>
+                <form
+                  action=""
+                  id="searchForm"
+                  class="d-flex justify-content-center"
+                >
+                  <input
+                    type="text"
+                    class="form-control mt-3"
+                    name="text"
+                    aria-describedby="helpId"
+                    placeholder="search"
+                    id="inputvalue"
+                  />
+                  <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
+                    Search
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -247,5 +254,6 @@
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/pages/explore.js" type="module"></script>
+    <script src="src/js/user/search.js" type="module"></script>
   </body>
 </html>
