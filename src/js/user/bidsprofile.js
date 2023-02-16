@@ -23,7 +23,6 @@ export async function profileBids() {
     json.forEach((element) => {
       const history = document.querySelector("#self");
       const link = document.createElement("a");
-      link.classList.add("link");
       link.href = `/scpecific.html?id=${element.listing.id}`;
       const list = document.createElement("li");
       list.classList.add("list-group-item", "list_class");
