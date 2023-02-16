@@ -20,12 +20,12 @@
 }
 
 .btn-bid {
-  background: $yellow;
+  background: $blue;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;
   outline: 2px solid $orange;
   &:hover {
-    background: $cyan;
+    background: $pink;
     transform: translateY(2px);
     box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   }

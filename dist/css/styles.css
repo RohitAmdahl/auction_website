@@ -10796,7 +10796,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .cta-signup:hover {
-  background-color: #fad8d1;
+  background-color: #80caff;
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -10818,7 +10818,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .cta-signup-cta:hover {
-  background-color: #fad8d1;
+  background-color: #80caff;
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -10841,23 +10841,25 @@ body {
 
 .big-btn {
   max-width: 350px;
-  background: #fad8d1;
+  background: #80caff;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;
   outline: 2px solid #fcb500;
 }
 .big-btn:hover {
-  background: #99e3e5;
+  background: #ffc7e9;
   transform: translateY(2px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .auction-hero {
-  max-width: 400px;
+  max-width: 284px;
+  max-height: 173px;
+  width: 100%;
 }
 
 .credit {
-  color: #004bbc;
+  color: #80caff;
 }
 
 .click-me {
@@ -10915,7 +10917,7 @@ body {
   }
 }
 .bids {
-  color: #004bbc;
+  color: #80caff;
 }
 
 .profile-info {
@@ -10941,13 +10943,13 @@ body {
 }
 
 .btn-bid {
-  background: #fad8d1;
+  background: #80caff;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;
   outline: 2px solid #fcb500;
 }
 .btn-bid:hover {
-  background: #99e3e5;
+  background: #ffc7e9;
   transform: translateY(2px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
