@@ -1,5 +1,5 @@
 // "?_active=true&sort=endsAt&sortOrder=asc";
-const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc`;
+const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18`;
 //
 const items = document.querySelector("#today");
 
@@ -15,10 +15,10 @@ async function endsTime() {
       },
     };
     const response = await fetch(endsAt_url, data);
-    console.log(response);
     const json = await response.json();
     console.log(json);
-    //
+    const items = document.querySelector("#today");
+    items.replaceChildren();
     json.forEach((ListElement) => {
       const mainCol = document.createElement("div");
       mainCol.classList.add(
@@ -34,6 +34,7 @@ async function endsTime() {
       card.classList.add("card", "list-Items", "mb-5");
       const img = document.createElement("img");
       img.src = ListElement.media[0];
+
       img.classList.add("card-img-top", "explore-media", "p-3");
       img.id = "picture";
       const DivCardBody = document.createElement("div");
@@ -90,26 +91,3 @@ async function endsTime() {
   }
 }
 endsTime();
-//  json.forEach((items) => {
-//    const latest = document.createElement("div");
-//    latest.classList.add(
-//      "col-12",
-//      "card",
-//      "col-lg-4",
-//      "col-md-6",
-//      "col-sm-12",
-//      "mt-4",
-//      "mb-5"
-//    );
-//    const img = document.createElement("img");
-//    img.src = items.media[0];
-//    img.classList.add("card-img-top", "explore-media");
-//    const divBody = document.createElement("div");
-//    const span = document.createElement("span");
-//    span.classList.add("p-2");
-//    span.innerText = new Date(items.endsAt).toLocaleDateString();
-//    card.append(latest);
-//    latest.append(img);
-//    latest.append(divBody);
-//    divBody.append(span);
-//  });
