@@ -4,6 +4,7 @@ const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=
 const items = document.querySelector("#today");
 
 //
+
 async function endsTime() {
   const token = localStorage.getItem("Token");
   try {
@@ -50,7 +51,7 @@ async function endsTime() {
       listGroup.classList.add("list-group", "list-group-flush");
       title.classList.add("list-group-item");
 
-      date.classList.add("list-group-item");
+      date.classList.add("list-group-item", "lead", "fw-bold");
       divButton.classList.add(
         "d-flex",
         "mt-1",

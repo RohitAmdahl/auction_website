@@ -3,7 +3,7 @@ const user = JSON.parse(localStorage.getItem("user"));
 const profileName = user.name;
 console.log(profileName);
 const listingCards = document.querySelector("#listingCards");
-console.log(listingCards);
+
 export async function sellerProfile() {
   const token = localStorage.getItem("Token");
   try {
