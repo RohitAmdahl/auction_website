@@ -34,6 +34,8 @@ async function endsTime() {
       card.classList.add("card", "list-Items", "mb-5");
       const img = document.createElement("img");
       img.src = ListElement.media[0];
+      img.classList.add("card-img-top", "explore-media", "p-3");
+      img.id = "picture";
       const DivCardBody = document.createElement("div");
       const listGroup = document.createElement("ul");
       const title = document.createElement("li");
@@ -42,8 +44,7 @@ async function endsTime() {
       date.innerText = new Date(ListElement.endsAt).toLocaleDateString();
       const divButton = document.createElement("div");
       const view = document.createElement("a");
-      img.classList.add("card-img-top", "explore-media");
-      img.id = "picture";
+
       DivCardBody.classList.add("card-body");
       listGroup.classList.add("list-group", "list-group-flush");
       title.classList.add("list-group-item");

@@ -10853,13 +10853,13 @@ body {
 }
 
 .auction-hero {
-  max-width: 284px;
-  max-height: 173px;
+  max-width: 250px;
+  max-height: 137px;
   width: 100%;
 }
 
 .credit {
-  color: #80caff;
+  color: #6610f2;
 }
 
 .click-me {
