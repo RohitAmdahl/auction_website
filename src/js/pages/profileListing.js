@@ -1,3 +1,5 @@
+import { deletePost } from "../user/delete.js";
+import { remove_Url } from "../user/delete.js";
 const listingByProfileURL = `https://nf-api.onrender.com/api/v1/auction/profiles`;
 const user = JSON.parse(localStorage.getItem("user"));
 const profileName = user.name;
@@ -55,6 +57,8 @@ export async function sellerProfile() {
 
       const deleteCta = document.createElement("button");
       deleteCta.innerText = "Delete";
+
+      deleteCta.addEventListener("click", deletePost());
 
       img.classList.add("card-img-top", "explore-media", "p-5");
       img.id = "picture";
