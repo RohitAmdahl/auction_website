@@ -9,6 +9,9 @@ function ProfileLogOut() {
     remove("profile");
     remove("userName");
     remove("credits");
+    setTimeout(() => {
+      window.location.href = "/login.html";
+    }, 800);
   });
 }
 ProfileLogOut();

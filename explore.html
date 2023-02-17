@@ -57,6 +57,16 @@
                       >Explore</a
                     >
                   </li>
+                  <li class="nav-item lead fw-bold">
+                    <a class="nav-link ms-3" href="profile.html"
+                      >Profile
+                      <span
+                        ><img
+                          class="w-100 icon"
+                          src="/pictures/icons/profile.png"
+                          alt="profile icon" /></span
+                    ></a>
+                  </li>
                 </ul>
               </div>
 
@@ -98,7 +108,7 @@
       <section class="container">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
+            <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
               <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
                 Oldest
               </button>
@@ -108,19 +118,26 @@
               <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
                 testing
               </button>
-            </div>
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
+            </div> -->
+            <div class="col-12 col-lg-12 col-md-12col-sm-12 mt-4">
               <div class="mb-3 d-flex">
-                <input
-                  type="text"
-                  class="form-control mt-3"
-                  name="text"
-                  aria-describedby="helpId"
-                  placeholder=""
-                />
-                <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
-                  Search
-                </button>
+                <form
+                  action=""
+                  id="searchForm"
+                  class="d-flex justify-content-center w-100 mb-3"
+                >
+                  <input
+                    type="text"
+                    class="form-control mt-3"
+                    name="text"
+                    aria-describedby="helpId"
+                    placeholder="search with tags"
+                    id="inputvalue"
+                  />
+                  <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
+                    Search
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -130,7 +147,7 @@
       <section>
         <div class="container">
           <div class="row" id="auction">
-            <div class="loading"></div>
+            <div class="loader d-flex justify-content-center mx-auto"></div>
             <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
               <div class="card explore-cards">
                 <img
@@ -214,17 +231,29 @@
       </section>
     </main>
     <footer>
-      <div
-        class="footer fw-bold p-2 d-flex flex-column justify-content-center text-center mt-3"
-      >
-        <span class="m-2"> &copy; Designed by:- Rohit Kumar</span>
-        <span> Semester project-2 </span>
-        <div>
-          &copy; <img src="pictures/logo-footer.png" alt="owner logo w-100" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <hr />
+            <div class="footer fw-bold p-2 d-flex flex-column text-end mt-3">
+              <span class=""> &copy; Designed by:- Rohit Kumar</span>
+              <span> Semester project-2 </span>
+              <span>backend, API delivered by Noroff. </span>
+              <div>
+                &copy;
+                <img
+                  src="pictures/logo-footer.png"
+                  class="logo"
+                  alt="owner logo w-100"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="src/js/pages/explore.js" type="module"></script>
+    <script src="src/js/user/search.js" type="module"></script>
   </body>
 </html>

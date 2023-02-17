@@ -10796,7 +10796,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .cta-signup:hover {
-  background-color: #fff7d6;
+  background-color: #80caff;
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -10818,7 +10818,7 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .cta-signup-cta:hover {
-  background-color: #fff7d6;
+  background-color: #80caff;
   transform: translateY(5px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
@@ -10832,37 +10832,32 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position-x: center;
-  height: 400px;
+  height: 310px;
 }
 
 .hero-heading {
-  background-color: #fff7d6;
+  background-color: #fdfcfb;
 }
 
 .big-btn {
   max-width: 350px;
-  background: #fff7d6;
+  background: #80caff;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;
   outline: 2px solid #fcb500;
 }
 .big-btn:hover {
-  background: #fcb500;
+  background: #ffc7e9;
   transform: translateY(2px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .auction-hero {
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .credit {
-  color: #004bbc;
-}
-
-.footer {
-  background-color: #ced4da;
+  color: #6610f2;
 }
 
 .click-me {
@@ -10870,7 +10865,7 @@ body {
 }
 
 .explore-img {
-  background-image: url(/pictures/explore.jpg);
+  background-image: url(/pictures/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10883,14 +10878,14 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .explore-action:hover {
-  background-color: #fff7d6;
+  background-color: #fad8d1;
   transform: translateY(2px);
   box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .explore-cards {
   width: 20rem;
-  height: 35rem;
+  height: 30rem;
 }
 
 .explore-products {
@@ -10904,7 +10899,7 @@ body {
 
 .loader {
   border: 16px solid #99e3e5; /* Light grey */
-  border-top: 16px solid #fff7d6; /* Blue */
+  border-top: 16px solid #fad8d1; /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -10920,18 +10915,48 @@ body {
   }
 }
 .bids {
-  color: #004bbc;
+  color: #80caff;
+}
+
+.profile-info {
+  width: 13rem;
+}
+
+.seller-Picture {
+  object-fit: cover;
+}
+
+.profilGoods {
+  max-width: 325px;
+}
+
+.list_class {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Specific-picture {
-  max-width: 350px;
+  max-width: 485px;
+  width: 100%;
+}
+
+.btn-bid {
+  background: #80caff;
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.2s;
+  outline: 2px solid #fcb500;
+}
+.btn-bid:hover {
+  background: #ffc7e9;
+  transform: translateY(2px);
+  box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
 }
 
 .cta-logout-cta {
   max-width: 150px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background: #ff7a00;
-  outline: 2px solid #fff7d6;
+  outline: 2px solid #fad8d1;
 }
 .cta-logout-cta:hover {
   transform: translateY(2px);
@@ -10940,11 +10965,15 @@ body {
 }
 
 .profile-pic {
-  max-width: 150px;
+  max-width: 100px;
+}
+
+.profile-cards {
+  height: 40rem;
 }
 
 .avatar-button {
-  max-width: 350px;
+  max-width: 200px;
   background: #99e3e5;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;

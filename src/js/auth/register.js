@@ -22,8 +22,6 @@ async function register(registerUrl, data) {
     }
     const results = await response.json();
     console.log(results);
-    // const profile = results.profile;
-    // localStorage.saveItem("profile", profile);
   } catch (error) {
     console.log(error);
   }

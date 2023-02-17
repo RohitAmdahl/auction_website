@@ -13,11 +13,14 @@
 }
 
 .profile-pic {
-  max-width: 150px;
+  max-width: 100px;
+}
+.profile-cards {
+  height: 40rem;
 }
 
 .avatar-button {
-  max-width: 350px;
+  max-width: 200px;
   background: $cyan;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   transition: all ease 0.2s;
