@@ -14,11 +14,18 @@ async function auctionCards() {
     console.log(results);
     auctionProducts.innerHTML = "";
     results.forEach((element) => {
+      let imgMedia = element.media;
+      console.log(imgMedia);
+
+      if (imgMedia.length === 0) {
+        imgMedia = ["/pictures/no-img.jpg"];
+        console.log(imgMedia);
+      }
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
               <div class="card explore-cards">
                 <img
-                  src="${element.media[0]}"
-                  class="card-img-top explore-media"
+                  src="${imgMedia}"
+                  class="card-img-top explore-media no-img"
                 />
                 <div class="card-body">
                   <ul class="list-group list-group-flush">
@@ -40,6 +47,7 @@ async function auctionCards() {
   }
 }
 auctionCards();
+
 //---------------------------------------------------------
 //---------------------------------------------------------
 //---------------------------------------------------------

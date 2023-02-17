@@ -114,7 +114,6 @@ export async function sellerProfile() {
       );
       view.innerText = "View List";
       view.href = `/scpecific.html?id=${ListElement.id}`;
-
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
       card.appendChild(img);
