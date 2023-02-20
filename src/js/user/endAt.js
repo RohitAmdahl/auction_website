@@ -82,7 +82,7 @@ async function endsTime() {
         "lead"
       );
       view.innerText = "View List";
-      view.href = `/scpecific.html?id=${listElement.id}`;
+      view.href = `/specific.html?id=${listElement.id}`;
 
       items.appendChild(mainCol);
       mainCol.appendChild(card);

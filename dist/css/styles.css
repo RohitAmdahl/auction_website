@@ -10827,14 +10827,6 @@ body {
   max-width: 29px;
 }
 
-.hero-background-img {
-  background-image: url(/pictures/hero-banner-1.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 310px;
-}
-
 .hero-heading {
   background-color: #fdfcfb;
 }
@@ -10862,14 +10854,6 @@ body {
 
 .click-me {
   max-width: 32px;
-}
-
-.explore-img {
-  background-image: url(/pictures/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 350px;
 }
 
 .explore-action {
