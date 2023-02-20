@@ -85,6 +85,13 @@
               >
                 Sign UP
               </a>
+              <button
+                href="signup.html"
+                class="ms-5 btn cta-logout-cta fw-bold active w-100 btn-lg"
+                role="button"
+              >
+                Log Out
+              </button>
             </div>
           </div>
         </nav>
@@ -95,12 +102,23 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-1">
-              <h1>
+              <h1 id="login-for-bid" class="explore-bid">
                 <span
-                  class="hero-heading fw-bold d-flex justify-content-center p-3 mt-5 ms-5 shadow-lg mb-5 rounded"
-                  >Search Hidden Treasures & Login for BID!</span
+                  class="hero-heading fw-bold d-flex justify-content-center p-5 mt-5 ms-5 shadow-lg mb-5 rounded"
+                  id="explore-text-bid"
+                >
+                  Search your products!</span
                 >
               </h1>
+            </div>
+            <div
+              class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+            >
+              <img
+                src="pictures/explore-2.png"
+                alt=""
+                class="w-100 auction-hero p-2"
+              />
             </div>
           </div>
         </div>
@@ -108,17 +126,6 @@
       <section class="container">
         <div class="container">
           <div class="row">
-            <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
-              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
-                Oldest
-              </button>
-              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
-                latest
-              </button>
-              <button class="btn btn-lg explore-action fw-bold ms-4 mt-3">
-                testing
-              </button>
-            </div> -->
             <div class="col-12 col-lg-12 col-md-12col-sm-12 mt-4">
               <div class="mb-3 d-flex">
                 <form
@@ -148,84 +155,6 @@
         <div class="container">
           <div class="row" id="auction">
             <div class="loader d-flex justify-content-center mx-auto"></div>
-            <!-- <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
-              <div class="card explore-cards">
-                <img
-                  src="/pictures/login-hero.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Title :- Name of the item</li>
-                    <li class="list-group-item">description :-</li>
-                    <li class="list-group-item">Date :-</li>
-                    <li class="list-group-item">Time :-</li>
-                    <li class="list-group-item">Bid :-</li>
-                  </ul>
-                  <a
-                    href="scpecific.html"
-                    class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
-                    >View item</a
-                  >
-                  <button class="btn big-btn btn-lg ms-5 mt-3 fw-bold">
-                    Bid now
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
-              <div class="card explore-cards">
-                <img
-                  src="/pictures/login-hero.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Title :- Name of the item</li>
-                    <li class="list-group-item">description :-</li>
-                    <li class="list-group-item">Date :-</li>
-                    <li class="list-group-item">Time :-</li>
-                    <li class="list-group-item">Bid :-</li>
-                  </ul>
-                  <a
-                    href="scpecific.html"
-                    class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
-                    >View item</a
-                  >
-                  <button class="btn big-btn btn-lg ms-5 mt-3 fw-bold">
-                    Bid now
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-4">
-              <div class="card explore-cards">
-                <img
-                  src="/pictures/login-hero.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Title :- Name of the item</li>
-                    <li class="list-group-item">description :-</li>
-                    <li class="list-group-item">Date :-</li>
-                    <li class="list-group-item">Time :-</li>
-                    <li class="list-group-item">Bid :-</li>
-                  </ul>
-                  <a
-                    href="scpecific.html"
-                    class="btn big-btn btn-lg ms-3 mt-3 fw-bold"
-                    >View item</a
-                  >
-                  <button class="btn big-btn btn-lg ms-5 mt-3 fw-bold">
-                    Bid now
-                  </button>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>
@@ -236,7 +165,7 @@
           <div class="col-12">
             <hr />
             <div class="footer fw-bold p-2 d-flex flex-column text-end mt-3">
-              <span class=""> &copy; Designed by:- Rohit Kumar</span>
+              <span> &copy; Designed by:- Rohit Kumar</span>
               <span> Semester project-2 </span>
               <span>backend, API delivered by Noroff. </span>
               <div>

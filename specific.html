@@ -83,6 +83,13 @@
               >
                 Sign UP
               </a>
+              <button
+                href="signup.html"
+                class="ms-5 btn cta-logout-cta fw-bold active w-100 btn-lg"
+                role="button"
+              >
+                Log Out
+              </button>
             </div>
           </div>
         </nav>
@@ -93,12 +100,23 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6 col-md-6 col-sm-12 mt-1">
-              <h1>
+              <h1 id="login-for-bid" class="explore-bid">
                 <span
-                  class="hero-heading Login-for-bid fw-bold d-flex justify-content-center p-3 mt-5 ms-5 shadow-lg mb-5 rounded"
-                  >Login for BID!</span
+                  class="hero-heading fw-bold d-flex justify-content-center p-2 mt-5 ms-5 shadow-lg mb-5 rounded"
+                  id="explore-text-bid"
+                >
+                  Login for BID!</span
                 >
               </h1>
+            </div>
+            <div
+              class="col-12 col-lg-6 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+            >
+              <img
+                src="pictures/explore-2.png"
+                alt=""
+                class="w-100 auction-hero p-2"
+              />
             </div>
           </div>
         </div>
@@ -222,7 +240,7 @@
                     </p>
                     <div class="d-flex justify-content-center">
                       <button
-                        class="btn mt-2 p-3 mb-3 big-btn fw-bold w-100 btn-lg"
+                        class="btn mt-2 p-3 mb-3 big-btn fw-bold w-100 btn-lg amount"
                         id="bid-cta-button "
                       >
                         Bid Now
@@ -272,5 +290,6 @@
     <script src="src/js/pages/specific.js" type="module"></script>
     <script src="src/js/pages/biderhistory.js" type="module"></script>
     <script src="src/js/handler/bid.js" type="module"></script>
+    <script src="src/js/variable.js/pagesvariable.js" type="module"></script>
   </body>
 </html>

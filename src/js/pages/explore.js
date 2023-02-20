@@ -15,12 +15,14 @@ async function auctionCards() {
     auctionProducts.innerHTML = "";
     results.forEach((element) => {
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
-              <div class="card explore-cards">
-                <img
-                  src="${element.media[0]}"
-                  class="card-img-top explore-media"
-                />
-                <div class="card-body">
+              <div class="card  list-items p-4">
+                  <img
+                  class="card-img-top explore-media no-img  mx-auto p-2"
+                   src="${
+                     element.media[0]
+                   }" onerror="if (this.src != '/pictures/no-img.png') this.src = '/pictures/no-img.png';" alt="product picture" />
+
+                <div class="card-body p-3">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
                     <li class="list-group-item lead">Bid :-  ${
@@ -30,7 +32,7 @@ async function auctionCards() {
                     ${new Date(element.endsAt).toLocaleDateString()}</li>
                   </ul>
                   <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
-                   href="scpecific.html?id=${element.id}">View item</a>
+                   href="specific.html?id=${element.id}">View item</a>
                 </div>
               </div>
             </div>`;
@@ -40,35 +42,3 @@ async function auctionCards() {
   }
 }
 auctionCards();
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-// function CreateHtmlCards() {
-//   const container = document.createElement("div");
-//   container.classList.add("rohit");
-//   container.innerHTML = `<div class="card explore-cards">
-//                 <img
-//                   src="}"
-//                   class="card-img-top explore-media"
-//                 />
-//                 <div class="card-body">
-//                   <ul class="list-group list-group-flush">
-//                     <li class="list-group-item title"></li>
-//                     <li class="list-group-item lead bid"> </li>
-//                     <li class="list-group-item date"> </li>
-//                   </ul>
-//                   <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
-//                    href="#">View item</a>
-//                 </div>
-//               </div>`;
-//   container.querySelector(".title").innerText = "hello world";
-//   container.querySelector(".bid").innerText = "hello world";
-//   container.querySelector(".date").innerText = "hello world";
-//   console.log(container);
-//   auctionProducts.append(container);
-//   document.append(container);
-// }
-// CreateHtmlCards();

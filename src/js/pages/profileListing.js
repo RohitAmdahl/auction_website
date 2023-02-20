@@ -58,7 +58,9 @@ export async function sellerProfile() {
       const deleteCta = document.createElement("button");
       deleteCta.innerText = "Delete";
 
-      deleteCta.addEventListener("click", deletePost());
+      deleteCta.addEventListener("click", () => {
+        deletePost(ListElement.id);
+      });
 
       img.classList.add("card-img-top", "explore-media", "p-5");
       img.id = "picture";
@@ -112,7 +114,6 @@ export async function sellerProfile() {
       );
       view.innerText = "View List";
       view.href = `/scpecific.html?id=${ListElement.id}`;
-
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
       card.appendChild(img);

@@ -22,8 +22,15 @@ async function singleData() {
   try {
     const response = await fetch(`${single_Url}/${id}`, Data);
     const data = await response.json();
+    console.log(data);
+
     const SpecificPicture = document.querySelector(".Specific-picture");
     SpecificPicture.src = data.media[0];
+    if (data.media[0]) {
+      SpecificPicture.src = data.media[0];
+    } else {
+      SpecificPicture.src = "/pictures/no-img.png";
+    }
     const title = document.querySelector(".title");
     title.innerText = data.title;
     const description = document.querySelector(".description");
