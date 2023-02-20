@@ -1,4 +1,7 @@
-// "?_active=true&sort=endsAt&sortOrder=asc";
+// import { loginCta } from "../variable.js/pagesvariable.js";
+// import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
+// import { signupCta } from "../variable.js/pagesvariable.js";
+
 const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18`;
 
 const items = document.querySelector("#today");

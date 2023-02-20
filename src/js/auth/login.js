@@ -1,3 +1,4 @@
+import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
 import { save } from "../storage/localStorage.js";
 export const loginUrl = "https://nf-api.onrender.com/api/v1/auction/auth/login";
 const method = "post";
@@ -28,10 +29,6 @@ export async function login(url, data) {
       avatar: results.avatar,
       credits: results.credits,
     });
-
-    if (response.ok) {
-      window.location.replace("/profile.html");
-    }
   } catch (error) {
     console.log(error);
   }
