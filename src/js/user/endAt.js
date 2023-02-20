@@ -1,9 +1,7 @@
 // "?_active=true&sort=endsAt&sortOrder=asc";
 const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18`;
-//
-const items = document.querySelector("#today");
 
-//
+const items = document.querySelector("#today");
 
 async function endsTime() {
   const token = localStorage.getItem("Token");
@@ -20,7 +18,14 @@ async function endsTime() {
     console.log(json);
     const items = document.querySelector("#today");
     items.replaceChildren();
-    json.forEach((ListElement) => {
+    json.forEach((listElement) => {
+      // let imgMedia = listElement.media[0].length;
+      // console.log(imgMedia);
+
+      // if (imgMedia.length === 0) {
+      //   imgMedia = ["/pictures/no-img.png"];
+      //   console.log(imgMedia);
+      // }
       const mainCol = document.createElement("div");
       mainCol.classList.add(
         "col-12",
@@ -32,18 +37,22 @@ async function endsTime() {
       );
       const card = document.createElement("div");
 
-      card.classList.add("card", "list-Items", "mb-5");
+      card.classList.add("card", "list-Items", "mb-5", "p-2");
       const img = document.createElement("img");
-      img.src = ListElement.media[0];
-
       img.classList.add("card-img-top", "explore-media", "p-3");
       img.id = "picture";
+      img.src = listElement.media[0];
+      if (listElement.media[0]) {
+        img.src = listElement.media[0];
+      } else {
+        img.src = "/pictures/no-img.png";
+      }
       const DivCardBody = document.createElement("div");
       const listGroup = document.createElement("ul");
       const title = document.createElement("li");
-      title.innerText = ListElement.title;
+      title.innerText = listElement.title;
       const date = document.createElement("li");
-      date.innerText = new Date(ListElement.endsAt).toLocaleDateString();
+      date.innerText = new Date(listElement.endsAt).toLocaleDateString();
       const divButton = document.createElement("div");
       const view = document.createElement("a");
 
@@ -64,7 +73,7 @@ async function endsTime() {
         "d-flex",
         "btn",
         "fw-bold",
-        "btn-lg",
+
         "big-btn",
         "profileListingCta",
         "p-2",
@@ -73,7 +82,7 @@ async function endsTime() {
         "lead"
       );
       view.innerText = "View List";
-      view.href = `/scpecific.html?id=${ListElement.id}`;
+      view.href = `/scpecific.html?id=${listElement.id}`;
 
       items.appendChild(mainCol);
       mainCol.appendChild(card);

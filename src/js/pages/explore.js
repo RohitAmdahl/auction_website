@@ -14,20 +14,22 @@ async function auctionCards() {
     console.log(results);
     auctionProducts.innerHTML = "";
     results.forEach((element) => {
-      let imgMedia = element.media;
-      console.log(imgMedia);
+      // let imgMedia = element.media;
+      // console.log(imgMedia);
 
-      if (imgMedia.length === 0) {
-        imgMedia = ["/pictures/no-img.jpg"];
-        console.log(imgMedia);
-      }
+      // if (imgMedia.length === 0) {
+      //   imgMedia = ["/pictures/no--img.png"];
+      //   console.log(imgMedia);
+      // }
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
-              <div class="card explore-cards">
-                <img
-                  src="${imgMedia}"
-                  class="card-img-top explore-media no-img"
-                />
-                <div class="card-body">
+              <div class="card  list-items p-4">
+                  <img
+                  class="card-img-top explore-media no-img  mx-auto p-2"
+                   src="${
+                     element.media[0]
+                   }" onerror="if (this.src != '/pictures/no-img.png') this.src = '/pictures/no-img.png';" alt="product picture" />
+
+                <div class="card-body p-3">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Title ;- ${element.title}</li>
                     <li class="list-group-item lead">Bid :-  ${
