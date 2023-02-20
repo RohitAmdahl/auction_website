@@ -1,4 +1,4 @@
-import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
+// import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
 import { save } from "../storage/localStorage.js";
 export const loginUrl = "https://nf-api.onrender.com/api/v1/auction/auth/login";
 const method = "post";
@@ -29,6 +29,14 @@ export async function login(url, data) {
       avatar: results.avatar,
       credits: results.credits,
     });
+
+    if (accessToken && accessToken.length > 0) {
+      location.replace("/profile.html");
+      const login = (document.querySelector(".cta-login").display = "none");
+      console.log(login);
+      const signup = (document.querySelector(".cta-signup").display = "none");
+      console.log(signup);
+    }
   } catch (error) {
     console.log(error);
   }
