@@ -14,13 +14,6 @@ async function auctionCards() {
     console.log(results);
     auctionProducts.innerHTML = "";
     results.forEach((element) => {
-      // let imgMedia = element.media;
-      // console.log(imgMedia);
-
-      // if (imgMedia.length === 0) {
-      //   imgMedia = ["/pictures/no--img.png"];
-      //   console.log(imgMedia);
-      // }
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
               <div class="card  list-items p-4">
                   <img
@@ -49,36 +42,3 @@ async function auctionCards() {
   }
 }
 auctionCards();
-
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-//---------------------------------------------------------
-// function CreateHtmlCards() {
-//   const container = document.createElement("div");
-//   container.classList.add("rohit");
-//   container.innerHTML = `<div class="card explore-cards">
-//                 <img
-//                   src="}"
-//                   class="card-img-top explore-media"
-//                 />
-//                 <div class="card-body">
-//                   <ul class="list-group list-group-flush">
-//                     <li class="list-group-item title"></li>
-//                     <li class="list-group-item lead bid"> </li>
-//                     <li class="list-group-item date"> </li>
-//                   </ul>
-//                   <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
-//                    href="#">View item</a>
-//                 </div>
-//               </div>`;
-//   container.querySelector(".title").innerText = "hello world";
-//   container.querySelector(".bid").innerText = "hello world";
-//   container.querySelector(".date").innerText = "hello world";
-//   console.log(container);
-//   auctionProducts.append(container);
-//   document.append(container);
-// }
-// CreateHtmlCards();
