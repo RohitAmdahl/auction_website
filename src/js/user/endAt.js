@@ -2,7 +2,7 @@
 // import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
 import { ProfileLogOut } from "../handler/logout.js";
 
-const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18`;
+const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=15`;
 const token = localStorage.getItem("Token");
 
 const items = document.querySelector("#today");
