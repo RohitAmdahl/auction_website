@@ -113,7 +113,7 @@ export async function sellerProfile() {
         "justify-content-center"
       );
       view.innerText = "View List";
-      view.href = `/scpecific.html?id=${ListElement.id}`;
+      view.href = `/specific.html?id=${ListElement.id}`;
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
       card.appendChild(img);
@@ -133,38 +133,3 @@ export async function sellerProfile() {
   }
 }
 sellerProfile();
-
-// const img = document.createElement("img");
-// const DivCardBody = document.createElement("div");
-// const listGroup = document.createElement("ul");
-// const title = document.createElement("li");
-// const description = document.createElement("li");
-// const tags = document.createElement("li");
-// const date = document.createElement("li");
-// const divButton = document.createElement("div");
-// const update = document.createElement("button");
-// update.innerText = "update";
-// const deleteCta = document.createElement("button");
-// deleteCta.innerText = "delete";
-
-// img.classList.add("card-img-top"); // id missing
-// DivCardBody.classList.add("card-body");
-// listGroup.classList.add("list-group", "list-group-flush");
-// title.classList.add("list-group-item");
-// description.classList.add("list-group-item");
-// tags.classList.add("list-group-item");
-// date.classList.add("list-group-item");
-// divButton.classList.add("d-flex");
-// update.classList.add("d-flex");
-// deleteCta.classList.add("d-flex");
-
-// listingCards.appendChild(img);
-// listingCards.appendChild(DivCardBody);
-// DivCardBody.appendChild(listGroup);
-// listGroup.appendChild(title);
-// listGroup.appendChild(description);
-// listGroup.appendChild(tags);
-// listGroup.appendChild(date);
-// date.appendChild(divButton);
-// divButton.appendChild(update);
-// divButton.appendChild(deleteCta);

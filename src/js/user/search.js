@@ -1,9 +1,10 @@
+import { ProfileLogOut } from "../handler/logout.js";
 const searchUrl = "https://nf-api.onrender.com/api/v1/auction/listings?_tag";
 const searchForm = document.querySelector("#searchForm");
 const input = document.querySelector("#inputvalue");
 const cardsDiv = document.querySelector("#auction");
+const token = localStorage.getItem("Token");
 async function searchApiCall() {
-  const token = localStorage.getItem("Token");
   try {
     const data = {
       headers: {
@@ -51,3 +52,21 @@ searchForm.addEventListener("submit", (e) => {
   console.log(searchForm);
   searchApiCall();
 });
+
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+const user = document.querySelector("#user");
+if (token) {
+  console.log(login);
+  login.style.display = "none";
+  logout.style.display = "block";
+  signup.style.display = "none";
+  user.style.display = "block";
+} else {
+  login.style.display = "block";
+  signup.style.display = "block";
+  logout.style.display = "none";
+  user.style.display = "none";
+}
+ProfileLogOut();

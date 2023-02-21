@@ -1,7 +1,7 @@
 import { remove } from "../storage/localStorage.js";
 import { clear } from "../storage/localStorage.js";
 
-function ProfileLogOut() {
+export function ProfileLogOut() {
   const logOut = document.querySelector(".cta-logout-cta");
   logOut.addEventListener("click", (e) => {
     remove("user");

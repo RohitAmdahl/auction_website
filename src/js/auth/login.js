@@ -32,10 +32,6 @@ export async function login(url, data) {
 
     if (accessToken && accessToken.length > 0) {
       location.replace("/profile.html");
-      const login = (document.querySelector(".cta-login").display = "none");
-      console.log(login);
-      const signup = (document.querySelector(".cta-signup").display = "none");
-      console.log(signup);
     }
   } catch (error) {
     console.log(error);

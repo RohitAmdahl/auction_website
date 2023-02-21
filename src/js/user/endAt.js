@@ -1,13 +1,14 @@
 // import { loginCta } from "../variable.js/pagesvariable.js";
 // import { isUserLoggedIn } from "../variable.js/pagesvariable.js";
-// import { signupCta } from "../variable.js/pagesvariable.js";
+import { ProfileLogOut } from "../handler/logout.js";
 
 const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=18`;
+const token = localStorage.getItem("Token");
 
 const items = document.querySelector("#today");
 
 async function endsTime() {
-  const token = localStorage.getItem("Token");
+  // const token = localStorage.getItem("Token");
   try {
     const data = {
       method: "get",
@@ -22,13 +23,6 @@ async function endsTime() {
     const items = document.querySelector("#today");
     items.replaceChildren();
     json.forEach((listElement) => {
-      // let imgMedia = listElement.media[0].length;
-      // console.log(imgMedia);
-
-      // if (imgMedia.length === 0) {
-      //   imgMedia = ["/pictures/no-img.png"];
-      //   console.log(imgMedia);
-      // }
       const mainCol = document.createElement("div");
       mainCol.classList.add(
         "col-12",
@@ -104,3 +98,22 @@ async function endsTime() {
   }
 }
 endsTime();
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+const user = document.querySelector("#user");
+if (token) {
+  console.log(login);
+
+  logout.style.display = "block";
+  login.style.display = "none";
+  user.style.display = "block";
+  signup.style.display = "none";
+} else {
+  login.style.display = "block";
+  signup.style.display = "block";
+  logout.style.display = "none";
+  user.style.display = "none";
+}
+
+ProfileLogOut();

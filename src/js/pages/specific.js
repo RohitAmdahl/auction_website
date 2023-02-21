@@ -1,3 +1,4 @@
+import { ProfileLogOut } from "../handler/logout.js";
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 console.log(single_Url);
 
@@ -6,11 +7,9 @@ const params = new URLSearchParams(queryString);
 console.log(params);
 const id = params.get("id");
 console.log(id);
-
+const token = localStorage.getItem("Token");
 const SingleCard = document.querySelector("#singleProduct");
 async function singleData() {
-  const token = localStorage.getItem("Token");
-
   const Data = {
     method: "get",
     headers: {
@@ -48,3 +47,26 @@ async function singleData() {
   }
 }
 singleData();
+
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+const user = document.querySelector("#user");
+const bid = document.querySelector("#explore-text-bid");
+const bidCta = document.querySelector("#bid-cta-button");
+console.log(bidCta);
+if (token) {
+  bidCta.disabled = false;
+  bid.innerText = "Welcome to Auction, Bid Now!";
+  login.style.display = "none";
+  logout.style.display = "block";
+  signup.style.display = "none";
+  user.style.display = "block";
+} else {
+  login.style.display = "block";
+  signup.style.display = "block";
+  logout.style.display = "none";
+  user.style.display = "none";
+  bidCta.disabled = true;
+}
+ProfileLogOut();
