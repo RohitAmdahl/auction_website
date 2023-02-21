@@ -8,6 +8,8 @@ console.log(params);
 const id = params.get("id");
 console.log(id);
 const token = localStorage.getItem("Token");
+
+console.log(Userprofile);
 const SingleCard = document.querySelector("#singleProduct");
 async function singleData() {
   const Data = {
@@ -54,8 +56,10 @@ const logout = document.querySelector(".cta-logout-cta");
 const user = document.querySelector("#user");
 const bid = document.querySelector("#explore-text-bid");
 const bidCta = document.querySelector("#bid-cta-button");
+const bidInput = document.querySelector(".bid-input");
 console.log(bidCta);
 if (token) {
+  bidInput.disabled = false;
   bidCta.disabled = false;
   bid.innerText = "Welcome to Auction, Bid Now!";
   login.style.display = "none";
@@ -68,5 +72,7 @@ if (token) {
   logout.style.display = "none";
   user.style.display = "none";
   bidCta.disabled = true;
+  bidInput.disabled = true;
 }
+
 ProfileLogOut();
