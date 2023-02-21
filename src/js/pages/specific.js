@@ -8,8 +8,6 @@ console.log(params);
 const id = params.get("id");
 console.log(id);
 const token = localStorage.getItem("Token");
-
-console.log(Userprofile);
 const SingleCard = document.querySelector("#singleProduct");
 async function singleData() {
   const Data = {
