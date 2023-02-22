@@ -103,8 +103,6 @@ const login = document.querySelector(".cta-login");
 const logout = document.querySelector(".cta-logout-cta");
 const user = document.querySelector("#user");
 if (token) {
-  console.log(login);
-
   logout.style.display = "block";
   login.style.display = "none";
   user.style.display = "block";

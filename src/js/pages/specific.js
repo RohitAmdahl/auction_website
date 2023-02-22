@@ -51,7 +51,7 @@ singleData();
 const signup = document.querySelector(".cta-signup");
 const login = document.querySelector(".cta-login");
 const logout = document.querySelector(".cta-logout-cta");
-const user = document.querySelector("#user");
+// const user = document.querySelector("#user");
 const bid = document.querySelector("#explore-text-bid");
 const bidCta = document.querySelector("#bid-cta-button");
 const bidInput = document.querySelector(".bid-input");
@@ -63,12 +63,12 @@ if (token) {
   login.style.display = "none";
   logout.style.display = "block";
   signup.style.display = "none";
-  user.style.display = "block";
+  // user.style.display = "block";
 } else {
   login.style.display = "block";
   signup.style.display = "block";
   logout.style.display = "none";
-  user.style.display = "none";
+  // user.style.display = "none";
   bidCta.disabled = true;
   bidInput.disabled = true;
 }

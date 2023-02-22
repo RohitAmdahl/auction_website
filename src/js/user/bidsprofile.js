@@ -1,11 +1,10 @@
 const bidProfile_Url = "https://nf-api.onrender.com/api/v1/auction/profiles";
 const user = JSON.parse(localStorage.getItem("user"));
 const profileName = user.name;
-console.log(profileName);
-const self = document.querySelector("#self");
 
+const self = document.querySelector("#self");
+const token = localStorage.getItem("Token");
 export async function profileBids() {
-  const token = localStorage.getItem("Token");
   try {
     const Data = {
       method: "get",
@@ -23,7 +22,7 @@ export async function profileBids() {
     json.forEach((element) => {
       const history = document.querySelector("#self");
       const link = document.createElement("a");
-      link.href = `/scpecific.html?id=${element.listing.id}`;
+      link.href = `/specific.html?id=${element.listing.id}`;
       const list = document.createElement("li");
       list.classList.add("list-group-item", "list_class");
       list.innerText = element.listing.title;
