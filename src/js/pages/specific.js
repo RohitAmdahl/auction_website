@@ -28,7 +28,7 @@ async function singleData() {
     if (data.media[0]) {
       SpecificPicture.src = data.media[0];
     } else {
-      SpecificPicture.src = "semester-project-2-/pictures/no-img.png";
+      SpecificPicture.src = "pictures/no-img.png";
     }
     const title = document.querySelector(".title");
     title.innerText = data.title;
