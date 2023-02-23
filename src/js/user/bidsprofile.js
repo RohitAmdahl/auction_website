@@ -22,7 +22,7 @@ export async function profileBids() {
     json.forEach((element) => {
       const history = document.querySelector("#self");
       const link = document.createElement("a");
-      link.href = `semester-project-2-/specific.html?id=${element.listing.id}`;
+      link.href = `/specific.html?id=${element.listing.id}`;
       const list = document.createElement("li");
       list.classList.add("list-group-item", "list_class");
       list.innerText = element.listing.title;
