@@ -42,7 +42,7 @@ async function endsTime() {
       if (listElement.media[0]) {
         img.src = listElement.media[0];
       } else {
-        img.src = "semester-project-2-/pictures/no-img.png";
+        img.src = "pictures/no-img.png";
       }
       const DivCardBody = document.createElement("div");
       const listGroup = document.createElement("ul");
