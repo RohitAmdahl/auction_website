@@ -113,7 +113,7 @@ export async function sellerProfile() {
         "justify-content-center"
       );
       view.innerText = "View List";
-      view.href = `semester-project-2-/specific.html?id=${ListElement.id}`;
+      view.href = `/specific.html?id=${ListElement.id}`;
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
       card.appendChild(img);
