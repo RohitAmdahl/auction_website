@@ -42,7 +42,7 @@ async function endsTime() {
       if (listElement.media[0]) {
         img.src = listElement.media[0];
       } else {
-        img.src = "/pictures/no-img.png";
+        img.src = "semester-project-2-/pictures/no-img.png";
       }
       const DivCardBody = document.createElement("div");
       const listGroup = document.createElement("ul");
@@ -79,7 +79,7 @@ async function endsTime() {
         "lead"
       );
       view.innerText = "View List";
-      view.href = `/specific.html?id=${listElement.id}`;
+      view.href = `semester-project-2-/specific.html?id=${listElement.id}`;
 
       items.appendChild(mainCol);
       mainCol.appendChild(card);
