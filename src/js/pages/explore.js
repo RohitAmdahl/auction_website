@@ -20,7 +20,7 @@ async function auctionCards() {
                   class="card-img-top explore-media no-img  mx-auto p-2"
                    src="${
                      element.media[0]
-                   }" onerror="if (this.src != 'semester-project-2-/pictures/no-img.png') this.src = '/pictures/no-img.png';" alt="product picture" />
+                   }" onerror="if (this.src != '/pictures/no-img.png') this.src = '/pictures/no-img.png';" alt="product picture" />
 
                 <div class="card-body p-3">
                   <ul class="list-group list-group-flush">
