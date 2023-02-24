@@ -36,7 +36,7 @@ async function searchApiCall() {
                     ${new Date(element.endsAt).toLocaleDateString()}</li>
                   </ul>
                   <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
-                   href="scpecific.html?id=${element.id}">View item</a>
+                   href="specific.html?id=${element.id}">View item</a>
                 </div>
               </div>
             </div>`;
