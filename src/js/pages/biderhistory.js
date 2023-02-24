@@ -26,6 +26,7 @@ async function biderHistory() {
     );
 
     const results = await response.json();
+
     const json = results.bids;
     console.log(json);
     json.forEach((element) => {

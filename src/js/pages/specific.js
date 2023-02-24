@@ -1,12 +1,8 @@
 import { ProfileLogOut } from "../handler/logout.js";
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
-console.log(single_Url);
-
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-console.log(params);
 const id = params.get("id");
-console.log(id);
 const token = localStorage.getItem("Token");
 const SingleCard = document.querySelector("#singleProduct");
 async function singleData() {
