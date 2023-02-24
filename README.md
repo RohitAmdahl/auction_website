@@ -2,7 +2,7 @@
 ![logo](https://user-images.githubusercontent.com/91061651/221214869-25237649-b8cb-4415-aaf3-1b0d93f4d44c.png)
 
 
-![iMac Pro Front View Mockup](https://user-images.githubusercontent.com/91061651/221214817-afda155d-a7f4-4d31-a91a-e78631628337.png)
+![iMac Pro Front View Mockup](https://user-images.githubusercontent.com/91061651/221215333-634909f2-c0b2-43a8-840d-a5eaa867f4a4.png)
 
 ## Description
 
