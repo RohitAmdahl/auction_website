@@ -15,7 +15,6 @@ async function searchApiCall() {
 
     const response = await fetch(`${searchUrl}=${input.value}`, data);
     const results = await response.json();
-    console.log(results);
     cardsDiv.innerHTML = "";
     results.forEach((element) => {
       cardsDiv.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">

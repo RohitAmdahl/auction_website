@@ -36,8 +36,6 @@ async function singleData() {
     // tag.innerHTML = data._count.tag[0];
     const bid = document.querySelector(".bid");
     bid.innerHTML = data._count.bids;
-
-    console.log(data);
   } catch (error) {
     console.log(error);
   }
