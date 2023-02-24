@@ -14,8 +14,6 @@ async function searchApiCall() {
     };
 
     const response = await fetch(`${searchUrl}=${input.value}`, data);
-    console.log(response);
-
     const results = await response.json();
     console.log(results);
     cardsDiv.innerHTML = "";
