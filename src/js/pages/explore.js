@@ -6,12 +6,10 @@ const loading = document.querySelector(".loading");
 async function auctionCards() {
   try {
     const response = await fetch(cardsUrl);
-    console.log(response);
     if (!response.ok) {
       return "error", `there was a error fetching the products:`;
     }
     const results = await response.json();
-    console.log(results);
     auctionProducts.innerHTML = "";
     results.forEach((element) => {
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
