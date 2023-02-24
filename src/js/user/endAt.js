@@ -17,7 +17,6 @@ async function endsTime() {
     };
     const response = await fetch(endsAt_url, data);
     const json = await response.json();
-    console.log(json);
     const items = document.querySelector("#today");
     items.replaceChildren();
     json.forEach((listElement) => {
