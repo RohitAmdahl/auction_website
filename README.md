@@ -1,6 +1,9 @@
-       ![logo](https://user-images.githubusercontent.com/91061651/220362102-b4be5b9c-c743-4eee-b420-8f566a140d2a.png)
 
-           ![iMac Pro Front View Mockup](https://user-images.githubusercontent.com/91061651/220362832-910e80ef-1cef-4049-a841-281cd9b15179.png)
+![logo](https://user-images.githubusercontent.com/91061651/221214869-25237649-b8cb-4415-aaf3-1b0d93f4d44c.png)
+
+
+
+![iMac Pro Front View Mockup](https://user-images.githubusercontent.com/91061651/221215772-82dc14ae-9ecc-4592-8c32-8f642739ef63.png)
 
 ## Description
 
