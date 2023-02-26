@@ -15,12 +15,12 @@ email.innerText = user_email;
 const avatar = JSON.parse(localStorage.getItem("user"));
 const avatar_pic = avatar.avatar;
 const pic = document.querySelector("#profile_img");
-console.log(pic);
+
 // console.log({ profile_email, img: avatar_pic.avatar });
 pic.src = profile_email.avatar;
 //---form
 const form = document.querySelector("#avatar");
-console.log(form);
+
 function editPicture() {
   form.addEventListener("submit", (e) => {
     e.target.value;

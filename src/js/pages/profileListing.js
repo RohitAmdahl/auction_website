@@ -3,7 +3,7 @@ import { remove_Url } from "../user/delete.js";
 const listingByProfileURL = `https://nf-api.onrender.com/api/v1/auction/profiles`;
 const user = JSON.parse(localStorage.getItem("user"));
 const profileName = user.name;
-console.log(profileName);
+
 const listingCards = document.querySelector("#listingCards");
 
 export async function sellerProfile() {
@@ -23,7 +23,7 @@ export async function sellerProfile() {
     );
 
     const json = await response.json();
-    console.log(json);
+
     json.forEach((ListElement) => {
       const mainCol = document.createElement("div");
       mainCol.classList.add(

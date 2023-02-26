@@ -18,7 +18,7 @@ export async function profileBids() {
       Data
     );
     const json = await response.json();
-    console.log(json);
+
     json.forEach((element) => {
       const history = document.querySelector("#self");
       const link = document.createElement("a");

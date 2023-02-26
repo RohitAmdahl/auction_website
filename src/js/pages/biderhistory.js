@@ -28,7 +28,7 @@ async function biderHistory() {
     const results = await response.json();
 
     const json = results.bids;
-    console.log(json);
+
     json.forEach((element) => {
       const history = document.querySelector("#history");
       const list = document.createElement("li");
@@ -40,8 +40,6 @@ async function biderHistory() {
       history.appendChild(list);
       list.appendChild(spa_Ner);
     });
-
-    console.log(results);
 
     // thumbnail for profile
     const img = document.querySelector(".sellerPicture");
@@ -56,3 +54,11 @@ async function biderHistory() {
 }
 
 biderHistory();
+
+// if (user) {
+//   const bidForm = document.querySelector(".bidForm");
+//   console.log(bidForm);
+//   bidForm.style.display = "none";
+// } else {
+//   bidForm.style.display = "block";
+// }

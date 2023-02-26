@@ -3,6 +3,8 @@ const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+const user = JSON.parse(localStorage.getItem("user"));
+const profileName = user.name;
 const token = localStorage.getItem("Token");
 const SingleCard = document.querySelector("#singleProduct");
 async function singleData() {
@@ -17,7 +19,6 @@ async function singleData() {
   try {
     const response = await fetch(`${single_Url}/${id}`, Data);
     const data = await response.json();
-    console.log(data);
 
     const SpecificPicture = document.querySelector(".Specific-picture");
     SpecificPicture.src = data.media[0];
@@ -49,7 +50,7 @@ const logout = document.querySelector(".cta-logout-cta");
 const bid = document.querySelector("#explore-text-bid");
 const bidCta = document.querySelector("#bid-cta-button");
 const bidInput = document.querySelector(".bid-input");
-console.log(bidCta);
+
 if (token) {
   bidInput.disabled = false;
   bidCta.disabled = false;

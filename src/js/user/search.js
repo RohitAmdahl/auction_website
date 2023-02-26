@@ -46,7 +46,7 @@ async function searchApiCall() {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchForm = e.target;
-  console.log(searchForm);
+
   searchApiCall();
 });
 
@@ -55,7 +55,6 @@ const login = document.querySelector(".cta-login");
 const logout = document.querySelector(".cta-logout-cta");
 const user = document.querySelector("#user");
 if (token) {
-  console.log(login);
   login.style.display = "none";
   logout.style.display = "block";
   signup.style.display = "none";

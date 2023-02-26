@@ -5,11 +5,11 @@ updateValue();
 
 function updateListingListener() {
   const url = new URL(location.href);
-  console.log(url);
+
   const id = url.searchParams.get("id");
-  console.log(id);
+
   const updateForm = document.querySelector("#listing-listing");
-  console.log(updateForm);
+
   updateForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const updateForm = e.target;

@@ -9,7 +9,6 @@ export async function editAvatar(avatarImage) {
     const sendData = {
       avatar: avatarImage,
     };
-    console.log(sendData);
 
     const Data = {
       method: "put",
@@ -21,9 +20,9 @@ export async function editAvatar(avatarImage) {
     };
 
     const response = await fetch(`${avatarURL}/${profileName}/media`, Data);
-    console.log(response);
+
     const json = await response.json();
-    console.log(json);
+
     save("user", {
       avatar: json.avatar,
     });
