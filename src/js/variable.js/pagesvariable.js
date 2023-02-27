@@ -1,5 +1,5 @@
 export const BidHeading = document.querySelector(".Login-for-bid");
-export const amount = (document.querySelector(".amount").disabled = true);
+// export const amount = (document.querySelector(".amount").disabled = true);
 console.log(amount);
 export const signupCta = document.querySelector(".cta-signup");
 export const loginCta = document.querySelector(".cta-login");
@@ -9,7 +9,7 @@ export function isUserLoggedIn() {
   const token = localStorage.getItem("Token");
   console.log(token);
 
-  if (token && token.length > 0) {
+  if (token) {
     signupCta.style.display = "none";
     loginCta.style.display = "none";
     logout.style.display = "none";
