@@ -132,4 +132,5 @@ export async function sellerProfile() {
     console.log(error);
   }
 }
+
 sellerProfile();
