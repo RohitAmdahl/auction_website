@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const user = JSON.parse(localStorage.getItem("user"));
-const profileName = user.name;
+// const profileName = user.name;
 
 const bidForm = document.querySelector(".bidForm");
 console.log(bidForm);
@@ -56,11 +56,11 @@ async function biderHistory() {
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
     //------------------------------------------------------------
-    if (user === auction.name) {
-      bidForm.style.display = "none";
-    } else {
-      bidForm.style.display = "block";
-    }
+    // if (user || auction.name) {
+    //   bidForm.style.display = "none";
+    // } else {
+    //   bidForm.style.display = "block";
+    // }
     //......................
   } catch (error) {
     console.log(error);
