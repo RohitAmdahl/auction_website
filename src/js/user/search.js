@@ -55,14 +55,15 @@ const login = document.querySelector(".cta-login");
 const logout = document.querySelector(".cta-logout-cta");
 const user = document.querySelector("#user");
 if (token) {
-  login.style.display = "none";
   logout.style.display = "block";
-  signup.style.display = "none";
+  login.style.display = "none";
   user.style.display = "block";
+  signup.style.display = "none";
 } else {
   login.style.display = "block";
   signup.style.display = "block";
   logout.style.display = "none";
   user.style.display = "none";
 }
+
 ProfileLogOut();
