@@ -1,15 +1,18 @@
 const base_Url = `https://nf-api.onrender.com/`;
 const listing_Url = `api/v1/auction/listings`;
-// const user = JSON.parse(localStorage.getItem("user"));
-// const profileName = user.name;
+
 const profile = document.querySelector(".profile-info");
 const history = document.querySelector("#history");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-
 const id = params.get("id");
 
+const user = JSON.parse(localStorage.getItem("user"));
+const profileName = user.name;
+
+const bidForm = document.querySelector(".bidForm");
+console.log(bidForm);
 async function biderHistory() {
   const token = localStorage.getItem("Token");
   try {
@@ -26,8 +29,10 @@ async function biderHistory() {
     );
 
     const results = await response.json();
+    console.log(results);
 
     const json = results.bids;
+    console.log(json);
 
     json.forEach((element) => {
       const history = document.querySelector("#history");
@@ -48,17 +53,15 @@ async function biderHistory() {
     profileName.innerHTML = results.seller.name;
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
+
+    if (profileName === results.seller.name) {
+      bidForm.style.display = "none";
+    } else {
+      bidForm.style.display = "block";
+    }
   } catch (error) {
     console.log(error);
   }
 }
 
 biderHistory();
-
-// if (user) {
-//   const bidForm = document.querySelector(".bidForm");
-//   console.log(bidForm);
-//   bidForm.style.display = "none";
-// } else {
-//   bidForm.style.display = "block";
-// }
