@@ -101,19 +101,6 @@ export async function sellerProfile() {
         "justify-content-center"
       );
 
-      view.classList.add(
-        "d-flex",
-        "btn",
-        "fw-bold",
-        "btn-sm",
-        "big-btn",
-        "profileListingCta",
-        "mt-3",
-        "p-2",
-        "justify-content-center"
-      );
-      view.innerText = "View List";
-      view.href = `/specific.html?id=${ListElement.id}`;
       listingCards.appendChild(mainCol);
       mainCol.appendChild(card);
       card.appendChild(img);
@@ -126,7 +113,6 @@ export async function sellerProfile() {
       DivCardBody.appendChild(divButton);
       divButton.appendChild(update);
       divButton.appendChild(deleteCta);
-      divButton.appendChild(view);
     });
   } catch (error) {
     console.log(error);
