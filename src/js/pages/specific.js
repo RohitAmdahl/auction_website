@@ -48,12 +48,10 @@ const logout = document.querySelector(".cta-logout-cta");
 logout.style.display = "none";
 
 const bid = document.querySelector("#explore-text-bid");
-const bidCta = document.querySelector("#bid-cta-button");
-const bidInput = document.querySelector(".bid-input");
+const bidForm = document.querySelector(".bidForm");
 
 if (token) {
-  bidInput.disabled = false;
-  bidCta.disabled = false;
+  bidForm.style.display = "block";
   bid.innerText = "Welcome to Auction, Bid Now!";
   login.style.display = "none";
   logout.style.display = "block";
@@ -62,8 +60,7 @@ if (token) {
   login.style.display = "block";
   signup.style.display = "block";
   logout.style.display = "none";
-  bidCta.disabled = true;
-  bidInput.disabled = true;
+  bidForm.style.display = "none";
 }
 
 ProfileLogOut();
