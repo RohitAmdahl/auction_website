@@ -32,6 +32,8 @@ async function biderHistory() {
     console.log(results);
 
     const json = results.bids;
+    const auction = results.seller;
+    console.log(auction);
     console.log(json);
 
     json.forEach((element) => {
@@ -53,12 +55,13 @@ async function biderHistory() {
     profileName.innerHTML = results.seller.name;
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
-
-    if (profileName === results.seller.name) {
+    //------------------------------------------------------------
+    if (user === auction.name) {
       bidForm.style.display = "none";
     } else {
       bidForm.style.display = "block";
     }
+    //......................
   } catch (error) {
     console.log(error);
   }
