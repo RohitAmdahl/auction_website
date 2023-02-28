@@ -22,3 +22,17 @@ export function isUserLoggedIn() {
     // amount.disabled = true;
   }
 }
+export function userLogin() {
+  if (token) {
+    bidForm.style.display = "block";
+    bid.innerText = "Welcome to Auction, Bid Now!";
+    login.style.display = "none";
+    logout.style.display = "block";
+    signup.style.display = "none";
+  } else {
+    bidForm.style.display = "none";
+    login.style.display = "block";
+    signup.style.display = "block";
+    logout.style.display = "none";
+  }
+}
