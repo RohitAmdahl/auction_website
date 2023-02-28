@@ -57,11 +57,11 @@ async function biderHistory() {
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
 
-    if (userName === results.seller.name) {
-      bidForm.style.display = "none";
-    } else {
-      bidForm.style.display = "block";
-    }
+    // if (userName === results.seller.name) {
+    //   bidForm.style.display = "none";
+    // } else {
+    //   bidForm.style.display = "block";
+    // }
     //------------------------------------------------------------
   } catch (error) {
     console.log(error);
