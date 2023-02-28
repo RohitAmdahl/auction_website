@@ -29,6 +29,9 @@ async function biderHistory() {
       `${base_Url}${listing_Url}/${id}/?_seller=true&_bids=true`,
       Data
     );
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
 
     const results = await response.json();
     console.log(results);

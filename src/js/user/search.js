@@ -14,6 +14,9 @@ async function searchApiCall() {
     };
 
     const response = await fetch(`${searchUrl}=${input.value}`, data); // .toLowerCase()
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
     const results = await response.json();
     cardsDiv.innerHTML = "";
     results.forEach((element) => {

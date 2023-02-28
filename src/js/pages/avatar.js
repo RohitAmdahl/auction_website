@@ -20,6 +20,9 @@ export async function editAvatar(avatarImage) {
     };
 
     const response = await fetch(`${avatarURL}/${profileName}/media`, Data);
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
 
     const json = await response.json();
 

@@ -17,6 +17,9 @@ export async function profileBids() {
       `${bidProfile_Url}/${profileName}/bids?_listings=true`,
       Data
     );
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
     const json = await response.json();
 
     json.forEach((element) => {

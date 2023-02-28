@@ -22,6 +22,10 @@ export async function sellerProfile() {
       Data
     );
 
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+
     const json = await response.json();
 
     json.forEach((ListElement) => {

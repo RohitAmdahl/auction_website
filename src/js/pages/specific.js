@@ -17,6 +17,9 @@ async function singleData() {
 
   try {
     const response = await fetch(`${single_Url}/${id}`, Data);
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
     const data = await response.json();
     console.log(data);
     const endTime = new Date(data.endsAt).toLocaleTimeString("en-GB", {

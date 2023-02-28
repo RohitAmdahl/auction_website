@@ -14,6 +14,9 @@ async function endsTime() {
       },
     };
     const response = await fetch(endsAt_url, data);
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
     const json = await response.json();
     const items = document.querySelector("#today");
     items.replaceChildren();
