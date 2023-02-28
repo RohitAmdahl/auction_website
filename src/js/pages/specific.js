@@ -1,4 +1,6 @@
 import { ProfileLogOut } from "../handler/logout.js";
+// import { userLogin } from "../variable.js/pagesvariable.js";
+// import { headerLogin } from "../variable.js/pagesvariable.js";
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -82,4 +84,5 @@ userLogin();
 // } else {
 //   bidForm.style.display = "none";
 // }
+
 ProfileLogOut();
