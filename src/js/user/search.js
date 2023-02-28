@@ -13,10 +13,14 @@ async function searchApiCall() {
       },
     };
 
-    const response = await fetch(`${searchUrl}=${input.value}`, data);
+    const response = await fetch(`${searchUrl}=${input.value}`, data); // .toLowerCase()
     const results = await response.json();
     cardsDiv.innerHTML = "";
     results.forEach((element) => {
+      const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
       cardsDiv.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
               <div class="card explore-cards">
                 <img
@@ -31,6 +35,7 @@ async function searchApiCall() {
                     }</li>
                     <li class="list-group-item">
                     ${new Date(element.endsAt).toLocaleDateString()}</li>
+                     <li class="list-group-item">Finishing Time: ${endTime}</li>
                   </ul>
                   <a  class="btn big-btn btn-sm d-flex justify-content-center p-2 rounded-2 fw-bold mt-3"
                    href="specific.html?id=${element.id}">View item</a>
@@ -46,6 +51,7 @@ async function searchApiCall() {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchForm = e.target;
+  console.log(searchForm);
 
   searchApiCall();
 });
