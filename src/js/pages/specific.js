@@ -49,6 +49,8 @@ logout.style.display = "none";
 
 const bid = document.querySelector("#explore-text-bid");
 const bidForm = document.querySelector(".bidForm");
+const userName = localStorage.getItem("user");
+console.log(userName);
 
 if (token) {
   bidForm.style.display = "block";
@@ -63,4 +65,9 @@ if (token) {
   bidForm.style.display = "none";
 }
 
+if (userName) {
+  bidForm.style.display = "none";
+} else {
+  bidForm.style.display = "none";
+}
 ProfileLogOut();
