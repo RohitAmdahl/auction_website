@@ -1,17 +1,6 @@
-// const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true`;
 const auctionProducts = document.querySelector("#auction");
 const loading = document.querySelector(".loading");
-
-// const formattedCreatedDate = new Date(created).toLocaleDateString("en-us", {
-//   month: "short",
-//   day: "numeric",
-// });
-
-// const formattedCreatedTime = new Date(created).toLocaleTimeString("en-GB", {
-//   hour: "2-digit",
-//   minute: "2-digit",
-// });
 
 async function auctionCards() {
   try {
