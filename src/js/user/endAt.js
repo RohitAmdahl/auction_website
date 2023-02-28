@@ -18,6 +18,11 @@ async function endsTime() {
     const items = document.querySelector("#today");
     items.replaceChildren();
     json.forEach((listElement) => {
+      const endTime = new Date(listElement.endsAt).toLocaleTimeString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
       const mainCol = document.createElement("div");
       mainCol.classList.add(
         "col-12",
@@ -45,12 +50,15 @@ async function endsTime() {
       title.innerText = listElement.title;
       const date = document.createElement("li");
       date.innerText = new Date(listElement.endsAt).toLocaleDateString();
+      const time = document.createElement("li");
+      time.innerText = endTime;
       const divButton = document.createElement("div");
       const view = document.createElement("a");
 
       DivCardBody.classList.add("card-body");
       listGroup.classList.add("list-group", "list-group-flush");
       title.classList.add("list-group-item");
+      time.classList.add("list-group-item");
 
       date.classList.add("list-group-item", "lead", "fw-bold");
       divButton.classList.add(
@@ -83,6 +91,7 @@ async function endsTime() {
       DivCardBody.appendChild(listGroup);
       listGroup.appendChild(title);
       listGroup.appendChild(date);
+      listGroup.appendChild(time);
       DivCardBody.appendChild(divButton);
       divButton.appendChild(view);
     });
