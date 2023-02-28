@@ -27,7 +27,6 @@ async function auctionCards() {
         hour: "2-digit",
         minute: "2-digit",
       });
-      console.log(element);
       auctionProducts.innerHTML += `<div class="col-12 col-lg-4 col-md-6 col-sm-12 mt-4">
               <div class="card  list-items p-4">
                   <img
