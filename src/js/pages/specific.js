@@ -12,22 +12,6 @@ console.log(bidForm);
 const userName = localStorage.getItem("user");
 console.log(userName);
 
-function userLogin() {
-  if (token) {
-    bidForm.style.display = "block";
-    bid.innerText = "Welcome to Auction, Bid Now!";
-    login.style.display = "none";
-    logout.style.display = "block";
-    signup.style.display = "none";
-  } else {
-    bidForm.style.display = "none";
-    login.style.display = "block";
-    signup.style.display = "block";
-    logout.style.display = "none";
-  }
-}
-userLogin();
-
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -78,7 +62,21 @@ async function singleData() {
   }
 }
 singleData();
-
+function userLogin() {
+  if (token) {
+    bidForm.style.display = "block";
+    bid.innerText = "Welcome to Auction, Bid Now!";
+    login.style.display = "none";
+    logout.style.display = "block";
+    signup.style.display = "none";
+  } else {
+    bidForm.style.display = "none";
+    login.style.display = "block";
+    signup.style.display = "block";
+    logout.style.display = "none";
+  }
+}
+userLogin();
 // if (userName) {
 //   bidForm.style.display = "none";
 // } else {

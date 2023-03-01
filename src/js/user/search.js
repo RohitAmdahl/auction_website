@@ -3,22 +3,7 @@ const searchUrl = "https://nf-api.onrender.com/api/v1/auction/listings?_tag";
 const searchForm = document.querySelector("#searchForm");
 const input = document.querySelector("#inputvalue");
 const cardsDiv = document.querySelector("#auction");
-const token = localStorage.getItem("Token");
-const signup = document.querySelector(".cta-signup");
-const login = document.querySelector(".cta-login");
-const logout = document.querySelector(".cta-logout-cta");
-const user = document.querySelector("#user");
-if (token) {
-  logout.style.display = "block";
-  login.style.display = "none";
-  user.style.display = "block";
-  signup.style.display = "none";
-} else {
-  login.style.display = "block";
-  signup.style.display = "block";
-  logout.style.display = "none";
-  user.style.display = "none";
-}
+
 async function searchApiCall() {
   try {
     const data = {
@@ -73,5 +58,20 @@ searchForm.addEventListener("submit", (e) => {
 
   searchApiCall();
 });
-
+const token = localStorage.getItem("Token");
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+const user = document.querySelector("#user");
+if (token) {
+  logout.style.display = "block";
+  login.style.display = "none";
+  user.style.display = "block";
+  signup.style.display = "none";
+} else {
+  login.style.display = "block";
+  signup.style.display = "block";
+  logout.style.display = "none";
+  user.style.display = "none";
+}
 ProfileLogOut();
