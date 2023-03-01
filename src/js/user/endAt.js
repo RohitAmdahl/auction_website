@@ -2,22 +2,6 @@ import { ProfileLogOut } from "../handler/logout.js";
 
 const endsAt_url = `https://nf-api.onrender.com/api/v1/auction/listings?_active=true&sort=endsAt&sortOrder=asc&limit=15`;
 
-const signup = document.querySelector(".cta-signup");
-const login = document.querySelector(".cta-login");
-const logout = document.querySelector(".cta-logout-cta");
-const profile = document.querySelector("#user");
-if (token) {
-  logout.style.display = "block";
-  login.style.display = "none";
-  profile.style.display = "block";
-  signup.style.display = "none";
-} else {
-  login.style.display = "block";
-  signup.style.display = "block";
-  logout.style.display = "none";
-  profile.style.display = "none";
-}
-
 const token = localStorage.getItem("Token");
 const items = document.querySelector("#today");
 async function endsTime() {
@@ -120,7 +104,21 @@ async function endsTime() {
   }
 }
 endsTime();
-
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+const profile = document.querySelector("#user");
+if (token) {
+  logout.style.display = "block";
+  login.style.display = "none";
+  profile.style.display = "block";
+  signup.style.display = "none";
+} else {
+  login.style.display = "block";
+  signup.style.display = "block";
+  logout.style.display = "none";
+  profile.style.display = "none";
+}
 // const bidForm = document.querySelector(".bidForm");
 // console.log(bidForm);
 
