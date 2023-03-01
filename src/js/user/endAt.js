@@ -98,8 +98,6 @@ async function endsTime() {
       DivCardBody.appendChild(divButton);
       divButton.appendChild(view);
     });
-
-    //
   } catch (error) {
     console.log(error);
   }
@@ -120,5 +118,7 @@ if (token) {
   logout.style.display = "none";
   profile.style.display = "none";
 }
+// const bidForm = document.querySelector(".bidForm");
+// console.log(bidForm);
 
 ProfileLogOut();
