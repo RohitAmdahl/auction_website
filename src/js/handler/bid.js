@@ -36,7 +36,6 @@ async function bidProducts(amount) {
 function bidNumberProducts() {
   bidNow.addEventListener("submit", (e) => {
     e.preventDefault();
-
     const bidNow = e.target;
     const numberValue = bidNow.value;
     bidProducts(numberValue);
