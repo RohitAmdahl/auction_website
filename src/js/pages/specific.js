@@ -1,6 +1,33 @@
 import { ProfileLogOut } from "../handler/logout.js";
 // import { userLogin } from "../variable.js/pagesvariable.js";
 // import { headerLogin } from "../variable.js/pagesvariable.js";
+const signup = document.querySelector(".cta-signup");
+const login = document.querySelector(".cta-login");
+const logout = document.querySelector(".cta-logout-cta");
+logout.style.display = "none";
+
+const bid = document.querySelector("#explore-text-bid");
+const bidForm = document.querySelector(".bidForm");
+console.log(bidForm);
+const userName = localStorage.getItem("user");
+console.log(userName);
+
+function userLogin() {
+  if (token) {
+    bidForm.style.display = "block";
+    bid.innerText = "Welcome to Auction, Bid Now!";
+    login.style.display = "none";
+    logout.style.display = "block";
+    signup.style.display = "none";
+  } else {
+    bidForm.style.display = "none";
+    login.style.display = "block";
+    signup.style.display = "block";
+    logout.style.display = "none";
+  }
+}
+userLogin();
+
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -51,33 +78,6 @@ async function singleData() {
   }
 }
 singleData();
-
-const signup = document.querySelector(".cta-signup");
-const login = document.querySelector(".cta-login");
-const logout = document.querySelector(".cta-logout-cta");
-logout.style.display = "none";
-
-const bid = document.querySelector("#explore-text-bid");
-const bidForm = document.querySelector(".bidForm");
-console.log(bidForm);
-const userName = localStorage.getItem("user");
-console.log(userName);
-
-function userLogin() {
-  if (token) {
-    bidForm.style.display = "block";
-    bid.innerText = "Welcome to Auction, Bid Now!";
-    login.style.display = "none";
-    logout.style.display = "block";
-    signup.style.display = "none";
-  } else {
-    bidForm.style.display = "none";
-    login.style.display = "block";
-    signup.style.display = "block";
-    logout.style.display = "none";
-  }
-}
-userLogin();
 
 // if (userName) {
 //   bidForm.style.display = "none";

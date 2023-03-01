@@ -23,8 +23,9 @@ export function isUserLoggedIn() {
   }
 }
 const token = localStorage.getItem("Token");
-export const headerLogin = document.querySelector("headerLogin");
+
 export function userLogin() {
+  const headerLogin = document.querySelector("headerLogin");
   if (token) {
     headerLogin.innerHTML = `<div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
