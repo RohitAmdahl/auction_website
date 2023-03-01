@@ -9,13 +9,9 @@ function createListingListener() {
 
     const form = e.target;
     const title = form[0].value;
-
     const description = form[1].value;
-
     const media = form[2].value;
-
     const tags = form[3].value;
-
     const endsAt = form[4].value;
 
     // console.log(create.endsAt.toISOString());
