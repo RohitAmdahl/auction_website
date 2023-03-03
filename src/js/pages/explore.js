@@ -5,7 +5,10 @@ const loading = document.querySelector(".loading");
 let data = [];
 const searchForm = document.querySelector("form#search");
 // const searchTerm = document.querySelector("#inputValue");
-
+/**
+ * function setupSearch()  help to search with the title
+ * eventlistener, click event that filter out the search results with title
+ */
 function setupSearch() {
   searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -54,6 +57,8 @@ function setupSearch() {
 }
 
 /**
+ * function auctionCards() getting the array of products
+ * async function get method
  * api call for listing out the auction products
  * @returns all the products in array
  */
