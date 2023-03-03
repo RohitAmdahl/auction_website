@@ -5,7 +5,18 @@ const params = new URLSearchParams(queryString);
 console.log(params);
 const id = params.get("id");
 console.log(id);
-
+/**
+ * this api call return id. and helps to fetch the values to the edit also get the single post.
+ * need ```js
+ * const data = {
+    header: {
+      "Content-Type": "application/json charset=UTF-8",
+      Authorization: `Bearer ${token}`,
+    },
+  };
+ * ```
+ *
+ */
 export async function updateValue() {
   const token = localStorage.getItem("Token");
   const data = {
