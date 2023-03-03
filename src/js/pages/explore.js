@@ -2,6 +2,31 @@ const cardsUrl = `https://nf-api.onrender.com/api/v1/auction/listings?_active=tr
 const auctionProducts = document.querySelector("#auction");
 const loading = document.querySelector(".loading");
 
+let data = [];
+const SearchForm = document.querySelector("form#search");
+function setupSearch() {
+  SearchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const form = e.target;
+    console.log(form);
+    const searchTerm = form.term.value.trim();
+    console.log(searchTerm);
+    const filterProducts = searchTerm
+      ? data.filter(
+          (item) =>
+            item.title &&
+            item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      : data;
+    console.log(filterProducts);
+  });
+}
+setupSearch();
+
+/**
+ * api call for listing out the auction products
+ * @returns all the products in array
+ */
 async function auctionCards() {
   try {
     const response = await fetch(cardsUrl);
@@ -11,7 +36,7 @@ async function auctionCards() {
     const results = await response.json();
 
     auctionProducts.innerHTML = "";
-    results.forEach((element) => {
+    data = results.map((element) => {
       const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {
         hour: "2-digit",
         minute: "2-digit",
@@ -45,5 +70,3 @@ async function auctionCards() {
   }
 }
 auctionCards();
-
-// `${formattedCreatedTime}`, `${formattedCreatedTime}`;

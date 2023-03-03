@@ -123,19 +123,22 @@
             <div class="col-12 col-lg-12 col-md-12col-sm-12 mt-4">
               <div class="mb-3 d-flex">
                 <form
-                  action=""
-                  id="searchForm"
+                  role="search"
+                  id="search"
                   class="d-flex justify-content-center w-100 mb-3"
                 >
                   <input
-                    type="text"
+                    type="search"
                     class="form-control mt-3"
-                    name="text"
+                    name="search"
                     aria-describedby="helpId"
                     placeholder="search with tags"
-                    id="inputvalue"
+                    id="inputValue"
                   />
-                  <button class="btn btn-lg mt-3 explore-action fw-bold ms-3">
+                  <button
+                    class="btn btn-lg mt-3 explore-action fw-bold ms-3"
+                    type="submit"
+                  >
                     Search
                   </button>
                 </form>
