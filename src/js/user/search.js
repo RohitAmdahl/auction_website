@@ -1,4 +1,6 @@
 import { ProfileLogOut } from "../handler/logout.js";
+
+// import { searchForm } from "../pages/explore.js";
 // const searchUrl = "https://nf-api.onrender.com/api/v1/auction/listings?_tag";
 // const searchForm = document.querySelector("#searchForm");
 // const input = document.querySelector("#inputvalue");
