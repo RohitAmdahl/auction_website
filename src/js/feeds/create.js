@@ -1,10 +1,16 @@
 export const url = `https://nf-api.onrender.com/api/v1/auction/listings`;
-
+/**
+ * this function calls en api with post method
+ * authorization need to have in order to call the api
+ * const method = "post";
+ *@param {string} url
+ *@param {any} data
+ *
+ */
 export async function createListing(create) {
   console.log(create);
   console.log(create.tags);
   try {
-    //
     const tags = create.tags.split(",");
     console.log(tags);
     const media = create.media.split(",");
