@@ -60,7 +60,7 @@ function setupSearch() {
  * function auctionCards() getting the array of products
  * async function get method
  * api call for listing out the auction products
- * @returns all the products in array
+ * all the products in array
  */
 async function auctionCards() {
   try {

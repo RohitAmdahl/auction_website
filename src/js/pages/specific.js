@@ -1,6 +1,5 @@
 import { ProfileLogOut } from "../handler/logout.js";
-// import { userLogin } from "../variable.js/pagesvariable.js";
-// import { headerLogin } from "../variable.js/pagesvariable.js";
+
 const signup = document.querySelector(".cta-signup");
 const login = document.querySelector(".cta-login");
 const logout = document.querySelector(".cta-logout-cta");
@@ -19,6 +18,12 @@ const id = params.get("id");
 
 const token = localStorage.getItem("Token");
 // const SingleCard = document.querySelector("#singleProduct");
+/**
+ * function singleData()
+ * async function get method
+ * api call for listing get back id
+ *
+ */
 async function singleData() {
   const Data = {
     method: "get",

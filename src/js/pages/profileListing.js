@@ -5,7 +5,12 @@ const user = JSON.parse(localStorage.getItem("user"));
 const profileName = user.name;
 
 const listingCards = document.querySelector("#listingCards");
-
+/**
+ * function sellerProfile()
+ * async function get method
+ * api call for listing out the auction products
+ * all the products in array
+ */
 export async function sellerProfile() {
   const token = localStorage.getItem("Token");
   try {
