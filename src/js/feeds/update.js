@@ -3,7 +3,9 @@ export const updateListingUrl = `https://nf-api.onrender.com/api/v1/auction/list
 const url = new URL(location.href);
 const id = url.searchParams.get("id");
 console.log(id);
-
+/**
+ *
+ */
 export async function updateListingContent(create) {
   console.log(create);
   console.log(create.tags);
