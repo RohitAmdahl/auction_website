@@ -8,8 +8,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-// const user = JSON.parse(localStorage.getItem("user"));
-// const profileName = user.name;
 const userName = localStorage.getItem("user");
 console.log(userName);
 
