@@ -4,6 +4,7 @@ const searchForm = document.querySelector("#searchForm");
 const input = document.querySelector("#inputvalue");
 const cardsDiv = document.querySelector("#auction");
 
+console.log(term);
 async function searchApiCall() {
   try {
     const data = {
@@ -54,6 +55,7 @@ async function searchApiCall() {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchForm = e.target;
+  console.log(searchForm);
   console.log(searchForm);
 
   searchApiCall();
