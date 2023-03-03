@@ -3,9 +3,11 @@ const auctionProducts = document.querySelector("#auction");
 const loading = document.querySelector(".loading");
 
 let data = [];
-const SearchForm = document.querySelector("form#search");
+const searchForm = document.querySelector("form#search");
+// const searchTerm = document.querySelector("#inputValue");
+
 function setupSearch() {
-  SearchForm.addEventListener("submit", (e) => {
+  searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const form = e.target;
     console.log(form);
@@ -21,7 +23,6 @@ function setupSearch() {
     console.log(filterProducts);
   });
 }
-setupSearch();
 
 /**
  * api call for listing out the auction products
@@ -34,7 +35,7 @@ async function auctionCards() {
       return "error", `there was a error fetching the products:`;
     }
     const results = await response.json();
-
+    setupSearch();
     auctionProducts.innerHTML = "";
     data = results.map((element) => {
       const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {
