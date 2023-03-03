@@ -22,7 +22,6 @@ function setupSearch() {
       : data;
     auctionProducts.innerHTML = "";
     filterProducts.map((element) => {
-      console.log(element);
       const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {
         hour: "2-digit",
         minute: "2-digit",
