@@ -40,9 +40,7 @@ function setupSearch() {
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item lead"> ${value.title}</li>
                     <li class="list-group-item lead"> ${value.tags[0]}</li>
-                    <li class="list-group-item ">Bid: ${
-                      element._count.bids
-                    }</li>
+                    <li class="list-group-item ">Bid: ${value._count.bids}</li>
                     <li class="list-group-item"> Date:
                     ${new Date(value.endsAt).toLocaleDateString()}</li>
                       <li class="list-group-item">Finishing Time: ${endTime}</li>
