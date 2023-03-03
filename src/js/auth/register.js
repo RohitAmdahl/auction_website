@@ -1,7 +1,13 @@
 const registerUrl = "https://nf-api.onrender.com/api/v1/auction/auth/register";
 const form = document.querySelector("#register-form");
 const displayMsg = document.querySelector(".hero-heading");
-
+/**
+ * this function calls en api with post method
+ *  api fetch and this api call for registration
+ *@param {string} url
+ *body: JSON.stringify(data),
+ *
+ */
 async function register(registerUrl, data) {
   try {
     const body = JSON.stringify(data);
@@ -26,7 +32,11 @@ async function register(registerUrl, data) {
     console.log(error);
   }
 }
-
+/**
+ * event that register user with name , email and password and avatar
+ *  form is calling api , form with submit event.
+ *
+ */
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 

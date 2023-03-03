@@ -2,7 +2,13 @@
 import { save } from "../storage/localStorage.js";
 export const loginUrl = "https://nf-api.onrender.com/api/v1/auction/auth/login";
 const method = "post";
-
+/**
+ * this function calls en api with post method
+ *  api fetch and getting accessToken,credits and user profile
+ *@param {string} url
+ *body: JSON.stringify(data),
+ *
+ */
 export async function login(url, data) {
   try {
     const postData = {
