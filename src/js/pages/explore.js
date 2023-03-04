@@ -13,9 +13,7 @@ function setupSearch() {
   searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const form = e.target;
-    console.log(form);
     const searchTerm = form.term.value.trim();
-    console.log(searchTerm);
     const filterProducts = searchTerm
       ? data.filter(
           (item) =>
@@ -23,6 +21,10 @@ function setupSearch() {
             item.title.toLowerCase().includes(searchTerm.toLowerCase())
         )
       : data;
+    searchForm.reset();
+    // if (filterProducts ===) {
+
+    // }
     auctionProducts.innerHTML = "";
     filterProducts.map((element) => {
       const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {

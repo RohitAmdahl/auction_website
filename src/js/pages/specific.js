@@ -7,9 +7,8 @@ logout.style.display = "none";
 
 const bid = document.querySelector("#explore-text-bid");
 const bidForm = document.querySelector(".bidForm");
-console.log(bidForm);
+
 const userName = localStorage.getItem("user");
-console.log(userName);
 
 const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 const queryString = document.location.search;
@@ -52,8 +51,7 @@ async function singleData() {
     } else {
       SpecificPicture.src = "pictures/no-img.png";
     }
-    const nextImg = document.querySelector("#more");
-    nextImg.src = data.media[1];
+
     const title = document.querySelector(".title");
     title.innerText = data.title;
     const description = document.querySelector(".description");

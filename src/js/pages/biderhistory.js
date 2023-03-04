@@ -9,10 +9,9 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const userName = localStorage.getItem("user");
-console.log(userName);
 
 const bidForm = document.querySelector(".bidForm");
-console.log(bidForm);
+
 async function biderHistory() {
   const token = localStorage.getItem("Token");
   try {
@@ -30,14 +29,9 @@ async function biderHistory() {
     if (!response.ok) {
       throw new Error(`HTTP error: ${response.status}`);
     }
-
     const results = await response.json();
-    console.log(results);
-
     const json = results.bids;
-
-    console.log(json);
-
+    // fetching the data bid history
     json.forEach((element) => {
       const history = document.querySelector("#history");
       const list = document.createElement("li");
@@ -58,11 +52,6 @@ async function biderHistory() {
     const profileEmail = document.querySelector("#emailName");
     profileEmail.innerHTML = results.seller.email;
 
-    // if (userName === results.seller.name) {
-    //   bidForm.style.display = "none";
-    // } else {
-    //   bidForm.style.display = "block";
-    // }
     //------------------------------------------------------------
   } catch (error) {
     console.log(error);
