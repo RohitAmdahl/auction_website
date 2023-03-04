@@ -2,9 +2,8 @@ const single_Url = `https://nf-api.onrender.com/api/v1/auction/listings`;
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-console.log(params);
 const id = params.get("id");
-console.log(id);
+
 /**
  * this api call return id. and helps to fetch the values to the edit also get the single post.
  * need ```js
