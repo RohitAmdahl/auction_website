@@ -39,7 +39,7 @@ async function singleData() {
       throw new Error(`HTTP error: ${response.status}`);
     }
     const data = await response.json();
-    console.log(data);
+
     const endTime = new Date(data.endsAt).toLocaleTimeString("en-GB", {
       hour: "2-digit",
       minute: "2-digit",
@@ -52,6 +52,8 @@ async function singleData() {
     } else {
       SpecificPicture.src = "pictures/no-img.png";
     }
+    const nextImg = document.querySelector("#more");
+    nextImg.src = data.media[1];
     const title = document.querySelector(".title");
     title.innerText = data.title;
     const description = document.querySelector(".description");
@@ -82,10 +84,5 @@ function userLogin() {
   }
 }
 userLogin();
-// if (userName) {
-//   bidForm.style.display = "none";
-// } else {
-//   bidForm.style.display = "none";
-// }
 
 ProfileLogOut();
