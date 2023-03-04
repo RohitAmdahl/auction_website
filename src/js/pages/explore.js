@@ -22,9 +22,7 @@ function setupSearch() {
         )
       : data;
     searchForm.reset();
-    // if (filterProducts ===) {
 
-    // }
     auctionProducts.innerHTML = "";
     filterProducts.map((element) => {
       const endTime = new Date(element.endsAt).toLocaleTimeString("en-GB", {
