@@ -6,9 +6,8 @@ const id = url.searchParams.get("id");
 export async function updateListingContent(create) {
   try {
     const tags = create.tags.split(",");
-    console.log(tags);
+
     const media = create.media.split(",");
-    console.log(media);
 
     const token = localStorage.getItem("Token");
     const options = {
