@@ -3,14 +3,9 @@ export const updateListingUrl = `https://nf-api.onrender.com/api/v1/auction/list
 const url = new URL(location.href);
 const id = url.searchParams.get("id");
 console.log(id);
-/**
- *
- */
+
 export async function updateListingContent(create) {
-  console.log(create);
-  console.log(create.tags);
   try {
-    //
     const tags = create.tags.split(",");
     console.log(tags);
     const media = create.media.split(",");
@@ -30,7 +25,7 @@ export async function updateListingContent(create) {
         media,
       }),
     };
-    // console.log(create.endsAt.toISOString());
+
     const response = await fetch(`${updateListingUrl}/${id}`, options);
     if (response.ok) {
       const msg = document.querySelector(".message");
@@ -38,9 +33,8 @@ export async function updateListingContent(create) {
     } else {
       msg.classList.remove("message");
     }
-    console.log(response);
+
     const json = await response.json();
-    console.log(json);
   } catch (error) {
     console.log(error);
   }
