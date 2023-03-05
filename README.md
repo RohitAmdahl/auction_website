@@ -52,7 +52,7 @@ npm run start
   <tbody>
     <tr>
       <th>Gantt Chart</th>
-      <td><a href="https://trello.com/b/q8pA1uuq/semster-project-2">Gantt Chart Image</a></td>
+      <td><a href="https://trello.com/b/q8pA1uuq/semster-project-2">Gantt Chart link</a></td>
     </tr>
     <tr>
       <th>Design Prototype</th>
@@ -68,12 +68,8 @@ npm run start
       <td><a href="https://trello.com/b/q8pA1uuq/semster-project-2">Project Board Link</a></td>
     </tr>
     <tr>
-      <th>Repository</th>
-      <td><a href="https://github.com/RohitAmdahl/semster-project-2-">Project Repository</a></td>
-    </tr>
-    <tr>
       <th>Hosted Demo</th>
-      <td><a href="https://monumental-tulumba-33a98f.netlify.app">Live Site</a></td>
+      <td><a href="https://monumental-tulumba-33a98f.netlify.app">Live DEMO Site</a></td>
 
 </tr>
 
