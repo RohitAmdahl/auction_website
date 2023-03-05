@@ -24,7 +24,7 @@ The main features are:
 - View listings also when not logged in.
 - Registered user can Bid on the items.
 - Non Registered user can not Bid on the items.
-- Search with tags example car, water, clock etc.
+- Search with TITLE example yellow.
 
 ### Run CLI in terminal
 
@@ -70,7 +70,6 @@ npm run start
     <tr>
       <th>Hosted Demo</th>
       <td><a href="https://monumental-tulumba-33a98f.netlify.app">Live DEMO Site</a></td>
-
 </tr>
 
   </tbody>
