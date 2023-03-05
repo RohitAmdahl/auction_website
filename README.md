@@ -52,7 +52,7 @@ npm run start
   <tbody>
     <tr>
       <th>Gantt Chart</th>
-      <td><a href="https://trello.com/b/q8pA1uuq/semster-project-2">Gantt Chart link</a></td>
+      <td><a href="https://trello.com/invite/b/q8pA1uuq/ATTIe3086eb7f7777904715c2857a9a0a5216EED7E40/semster-project-2">Gantt Chart link</a></td>
     </tr>
     <tr>
       <th>Design Prototype</th>
