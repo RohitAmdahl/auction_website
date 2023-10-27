@@ -4,26 +4,26 @@
 
 ## Description
 
-Auction is a online auction website, look and feel and easy to navigate, where user can sign up and login and get 1000 credits for free, Non-registered users can search through the listings, but only registered users can make bids on listings.
+Implemented a fully responsive website using Noroff Auction API documentation. Developed functionalities including user login, sign up, and CRUD operations Registered users have the ability to bid on items, while non-registered users are restricted from bidding. Implemented search functionality by title, enabling users to find specific items, for example
 
 ## Built With
 
 - JavaScript
 - Bootstrap
-- Sass /scss
+- Sass /Scss
 - Noroff Auction API
 - Html
 
 The main features are:
 
 - Fully responsive.
-- backend - Noroff Auction API documentation been used.
+- backend - Noroff Auction API documentation has been used.
 - Login.
 - sign up.
 - Create/Read/Update/Delete listings.
 - View listings also when not logged in.
-- Registered user can Bid on the items.
-- Non Registered user can not Bid on the items.
+- Registered users can Bid on the items.
+- Non-Registered users can not Bid on the items.
 - Search with TITLE example yellow.
 
 ### Run CLI in terminal
